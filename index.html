@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><link href="css/site.css" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {"darkMode":"class","theme":{"extend":{"colors":{"on-primary-fixed":"#002022","primary":"#dbfcff","inverse-on-surface":"#2f3034","outline-variant":"#3b494b","inverse-primary":"#006970","surface-container-highest":"#333538","surface-dim":"#111317","background":"#111317","secondary-fixed-dim":"#dec800","surface":"#111317","inverse-surface":"#e2e2e6","primary-container":"#00f0ff","secondary":"#ffffff","on-primary-fixed-variant":"#004f54","surface-container-lowest":"#0c0e11","error":"#ffb4ab","on-tertiary-container":"#c00025","primary-fixed":"#7df4ff","on-secondary-container":"#716500","surface-bright":"#37393d","on-surface":"#e2e2e6","tertiary":"#fff3f2","on-tertiary-fixed-variant":"#93001a","on-primary":"#00363a","on-primary-container":"#006970","secondary-fixed":"#fde400","on-tertiary":"#68000f","secondary-container":"#fde400","tertiary-fixed":"#ffdad8","on-tertiary-fixed":"#410006","on-secondary-fixed-variant":"#504700","outline":"#849495","surface-container-low":"#1a1c1f","error-container":"#93000a","surface-tint":"#00dbe9","on-error":"#690005","primary-fixed-dim":"#00dbe9","surface-variant":"#333538","on-secondary":"#373100","on-surface-variant":"#b9cacb","on-error-container":"#ffdad6","on-secondary-fixed":"#201c00","tertiary-fixed-dim":"#ffb3b0","surface-container":"#1e2023","tertiary-container":"#ffcecb","surface-container-high":"#282a2d","on-background":"#e2e2e6"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"1rem","space-md":"0.75rem","space-sm":"0.5rem","space-lg":"1.25rem","space-xl":"2rem","gutter":"0.75rem","space-xs":"0.25rem"},"fontFamily":{"label-md":["JetBrains Mono"],"body-md":["Inter"],"headline-md":["Space Grotesk"],"display-lg-mobile":["Space Grotesk"],"body-sm":["Inter"],"headline-sm":["Space Grotesk"],"headline-lg-mobile":["Space Grotesk"],"label-lg":["JetBrains Mono"],"label-sm":["JetBrains Mono"],"headline-lg":["Space Grotesk"],"display-lg":["Space Grotesk"],"code":["JetBrains Mono"],"body-lg":["Inter"]},"fontSize":{"label-md":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg-mobile":["32px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-lg":["13px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"12px","letterSpacing":"0.08em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-lg":["48px",{"lineHeight":"52px","letterSpacing":"-0.03em","fontWeight":"700"}],"code":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface select-none"><header class="fixed top-0 left-0 right-0 h-14 z-50 bg-surface-container-lowest border-b-2 border-[#000000] px-space-md flex items-center justify-between shadow-[0_3px_0px_0px_#000000]"><div class="flex items-center gap-space-lg"><a href="index.html" class="flex items-center gap-space-sm bg-surface-container-highest border-t-2 border-l-2 border-[#333538] border-b-2 border-r-2 border-[#000000] px-space-sm py-1 shadow-[2px_2px_0px_0px_#000000] no-underline"><span class="w-2.5 h-2.5 bg-primary-container block"></span><span class="font-label-md text-label-md uppercase tracking-wider text-primary">PAINT.SYS v3.0 [UNREGISTERED HYPER-CANVAS]</span></a><nav class="hidden lg:flex items-center gap-1" data-active-classes="bg-primary-container text-on-primary-fixed border-t-2 border-l-2 border-[#000000] border-b-2 border-r-2 border-[#ffffff]"><a class="px-space-sm py-1 font-label-md text-label-md uppercase transition-none bg-primary-container text-on-primary-fixed border-t-2 border-l-2 border-[#000000] border-b-2 border-r-2 border-[#ffffff] nav-link" data-path="index" href="index.html" aria-current="page">Studio</a><a class="px-space-sm py-1 font-label-md text-label-md uppercase border-t-2 border-l-2 border-[#333538] border-b-2 border-r-2 border-[#000000] bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-none nav-link" data-path="propos" href="propos.html">À Propos</a><a class="px-space-sm py-1 font-label-md text-label-md uppercase border-t-2 border-l-2 border-[#333538] border-b-2 border-r-2 border-[#000000] bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-none nav-link" data-path="services" href="services.html">Services</a><a class="px-space-sm py-1 font-label-md text-label-md uppercase border-t-2 border-l-2 border-[#333538] border-b-2 border-r-2 border-[#000000] bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-none nav-link" data-path="contact" href="contact.html">Contact</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-lowest border-2 border-[#000000] px-space-sm py-1 font-code text-code text-primary"><span class="bg-surface-container-high text-on-surface px-1.5 py-0.5 border border-[#3b494b]">FPS: 60</span><span class="bg-surface-container-high text-on-surface px-1.5 py-0.5 border border-[#3b494b]">RAM: 64MB</span><span class="bg-surface-container-high text-secondary-container text-on-secondary-container px-1.5 py-0.5 border border-[#3b494b]">ZOOM: 100%</span><span class="bg-surface-container-high text-primary px-1.5 py-0.5 border border-[#3b494b]">X:512 Y:256</span></div><div class="flex items-center gap-space-xs"><button class="px-space-sm py-1 bg-secondary-container text-on-secondary-container font-label-md text-label-md uppercase font-bold border-2 border-[#000000] shadow-[2px_2px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none">EXPORT</button><button class="px-space-sm py-1 bg-primary-container text-on-primary-container font-label-md text-label-md uppercase font-bold border-2 border-[#000000] shadow-[2px_2px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none">FLIP 3D</button></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center border-2 border-[#000000] shadow-[2px_2px_0px_0px_#000000]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><aside class="fixed left-0 top-14 bottom-14 w-28 bg-surface-container-low border-r-2 border-[#000000] z-40 p-space-xs flex flex-col justify-between overflow-y-auto shadow-[3px_0px_0px_0px_#000000]"><div><div class="w-full bg-surface-container-highest border border-[#000000] text-center py-0.5 mb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">TOOL-RACK</div><div class="grid grid-cols-2 gap-1"><button class="h-11 w-11 bg-surface-container-high border-t-2 border-l-2 border-[#37393d] border-b-2 border-r-2 border-[#000000] shadow-[3px_3px_0px_0px_#000000] flex flex-col items-center justify-center text-on-surface active:bg-primary-container active:text-on-primary-fixed active:border-t-2 active:border-l-2 active:border-[#000000] active:border-b-2 active:border-r-2 active:border-[#ffffff] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Freehand Pen"><span class="material-symbols-outlined text-[18px]">edit</span><span class="font-label-sm text-[8px] uppercase leading-none mt-0.5">PEN</span></button><button class="h-11 w-11 bg-surface-container-high border-t-2 border-l-2 border-[#37393d] border-b-2 border-r-2 border-[#000000] shadow-[3px_3px_0px_0px_#000000] flex flex-col items-center justify-center text-on-surface active:bg-primary-container active:text-on-primary-fixed active:border-t-2 active:border-l-2 active:border-[#000000] active:border-b-2 active:border-r-2 active:border-[#ffffff] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Polyline"><span class="material-symbols-outlined text-[18px]">polyline</span><span class="font-label-sm text-[8px] uppercase leading-none mt-0.5">POLY</span></button><button class="h-11 w-11 bg-surface-container-high border-t-2 border-l-2 border-[#37393d] border-b-2 border-r-2 border-[#000000] shadow-[3px_3px_0px_0px_#000000] flex flex-col items-center justify-center text-on-surface active:bg-primary-container active:text-on-primary-fixed active:border-t-2 active:border-l-2 active:border-[#000000] active:border-b-2 active:border-r-2 active:border-[#ffffff] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Neon Spray"><span class="material-symbols-outlined text-[18px]">air</span><span class="font-label-sm text-[8px] uppercase leading-none mt-0.5">SPRAY</span></button><button class="h-11 w-11 bg-surface-container-high border-t-2 border-l-2 border-[#37393d] border-b-2 border-r-2 border-[#000000] shadow-[3px_3px_0px_0px_#000000] flex flex-col items-center justify-center text-on-surface active:bg-primary-container active:text-on-primary-fixed active:border-t-2 active:border-l-2 active:border-[#000000] active:border-b-2 active:border-r-2 active:border-[#ffffff] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="3D Extrude"><span class="material-symbols-outlined text-[18px]">view_in_ar</span><span class="font-label-sm text-[8px] uppercase leading-none mt-0.5">EXTRD</span></button><button class="h-11 w-11 bg-surface-container-high border-t-2 border-l-2 border-[#37393d] border-b-2 border-r-2 border-[#000000] shadow-[3px_3px_0px_0px_#000000] flex flex-col items-center justify-center text-on-surface active:bg-primary-container active:text-on-primary-fixed active:border-t-2 active:border-l-2 active:border-[#000000] active:border-b-2 active:border-r-2 active:border-[#ffffff] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Marquee Select"><span class="material-symbols-outlined text-[18px]">crop_free</span><span class="font-label-sm text-[8px] uppercase leading-none mt-0.5">MARQ</span></button><button class="h-11 w-11 bg-surface-container-high border-t-2 border-l-2 border-[#37393d] border-b-2 border-r-2 border-[#000000] shadow-[3px_3px_0px_0px_#000000] flex flex-col items-center justify-center text-on-surface active:bg-primary-container active:text-on-primary-fixed active:border-t-2 active:border-l-2 active:border-[#000000] active:border-b-2 active:border-r-2 active:border-[#ffffff] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Flood Fill"><span class="material-symbols-outlined text-[18px]">format_paint</span><span class="font-label-sm text-[8px] uppercase leading-none mt-0.5">FILL</span></button><button class="h-11 w-11 bg-surface-container-high border-t-2 border-l-2 border-[#37393d] border-b-2 border-r-2 border-[#000000] shadow-[3px_3px_0px_0px_#000000] flex flex-col items-center justify-center text-on-surface active:bg-primary-container active:text-on-primary-fixed active:border-t-2 active:border-l-2 active:border-[#000000] active:border-b-2 active:border-r-2 active:border-[#ffffff] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Typography Glyph"><span class="material-symbols-outlined text-[18px]">title</span><span class="font-label-sm text-[8px] uppercase leading-none mt-0.5">TEXT</span></button><button class="h-11 w-11 bg-surface-container-high border-t-2 border-l-2 border-[#37393d] border-b-2 border-r-2 border-[#000000] shadow-[3px_3px_0px_0px_#000000] flex flex-col items-center justify-center text-on-surface active:bg-primary-container active:text-on-primary-fixed active:border-t-2 active:border-l-2 active:border-[#000000] active:border-b-2 active:border-r-2 active:border-[#ffffff] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Eraser"><span class="material-symbols-outlined text-[18px]">ink_eraser</span><span class="font-label-sm text-[8px] uppercase leading-none mt-0.5">ERASE</span></button><button class="h-11 w-11 bg-surface-container-high border-t-2 border-l-2 border-[#37393d] border-b-2 border-r-2 border-[#000000] shadow-[3px_3px_0px_0px_#000000] flex flex-col items-center justify-center text-on-surface active:bg-primary-container active:text-on-primary-fixed active:border-t-2 active:border-l-2 active:border-[#000000] active:border-b-2 active:border-r-2 active:border-[#ffffff] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Geometric Prisms"><span class="material-symbols-outlined text-[18px]">category</span><span class="font-label-sm text-[8px] uppercase leading-none mt-0.5">PRISM</span></button><button class="h-11 w-11 bg-surface-container-high border-t-2 border-l-2 border-[#37393d] border-b-2 border-r-2 border-[#000000] shadow-[3px_3px_0px_0px_#000000] flex flex-col items-center justify-center text-on-surface active:bg-primary-container active:text-on-primary-fixed active:border-t-2 active:border-l-2 active:border-[#000000] active:border-b-2 active:border-r-2 active:border-[#ffffff] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Color Dropper"><span class="material-symbols-outlined text-[18px]">colorize</span><span class="font-label-sm text-[8px] uppercase leading-none mt-0.5">DROP</span></button><button class="h-11 w-11 bg-surface-container-high border-t-2 border-l-2 border-[#37393d] border-b-2 border-r-2 border-[#000000] shadow-[3px_3px_0px_0px_#000000] flex flex-col items-center justify-center text-on-surface active:bg-primary-container active:text-on-primary-fixed active:border-t-2 active:border-l-2 active:border-[#000000] active:border-b-2 active:border-r-2 active:border-[#ffffff] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Magic Stamp"><span class="material-symbols-outlined text-[18px]">approval</span><span class="font-label-sm text-[8px] uppercase leading-none mt-0.5">STAMP</span></button><button class="h-11 w-11 bg-surface-container-high border-t-2 border-l-2 border-[#37393d] border-b-2 border-r-2 border-[#000000] shadow-[3px_3px_0px_0px_#000000] flex flex-col items-center justify-center text-on-surface active:bg-primary-container active:text-on-primary-fixed active:border-t-2 active:border-l-2 active:border-[#000000] active:border-b-2 active:border-r-2 active:border-[#ffffff] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Layer Splice"><span class="material-symbols-outlined text-[18px]">content_cut</span><span class="font-label-sm text-[8px] uppercase leading-none mt-0.5">SPLC</span></button></div></div><div class="bg-surface-container-lowest border-2 border-[#000000] p-1 flex flex-col items-center gap-1 shadow-[2px_2px_0px_0px_#000000]"><div class="font-label-sm text-[8px] uppercase text-outline">PIXEL STEP</div><div class="w-full flex justify-between gap-1"><button class="flex-1 bg-surface-container-highest text-on-surface border border-[#000000] font-label-sm text-center py-0.5 active:bg-primary">1</button><button class="flex-1 bg-surface-container-highest text-on-surface border border-[#000000] font-label-sm text-center py-0.5 active:bg-primary">4</button><button class="flex-1 bg-primary-container text-on-primary-container font-bold border border-[#000000] font-label-sm text-center py-0.5">8</button></div></div></aside><div class="pl-28 pb-14"><main class="relative pt-14 bg-surface-dim min-h-[calc(100vh-3.5rem)]"><div class="flex flex-col w-full text-on-surface select-none p-space-md gap-space-lg">
+<!-- TOP STUDIO COMMAND RIBBON (NO GRADIENTS, PURE SOLID RETRO-HARDWARE RELIEF) -->
+<header class="reveal-on-scroll flex flex-wrap items-center justify-between gap-space-md bg-surface-container-high p-space-sm shadow-[4px_4px_0px_0px_#000000]">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-sm py-1 shadow-[2px_2px_0px_0px_#000000]">
+<span class="w-3 h-3 bg-primary-container inline-block shadow-[1px_1px_0px_0px_#000000]"></span>
+<span class="font-label-lg text-label-lg uppercase tracking-wider text-primary">CYBERPAINT 3D STUDIO v3.8</span>
+<span class="bg-secondary-container text-on-secondary-container px-1 py-0.2 font-label-sm text-label-sm font-bold">REV-09</span>
+</div>
+<div class="hidden md:flex items-center gap-1 font-label-md text-label-md">
+<span class="bg-surface-container-lowest text-primary px-2 py-1 shadow-[2px_2px_0px_0px_#000000]">STAGE: 1920×1080 PX</span>
+<span class="bg-surface-container-lowest text-secondary-container px-2 py-1 shadow-[2px_2px_0px_0px_#000000]">CANVAS: ISOMETRIC-3D</span>
+<span class="bg-surface-container-lowest text-on-surface-variant px-2 py-1 shadow-[2px_2px_0px_0px_#000000]">COLOR-DEPTH: 8-BIT SOLID</span>
+</div>
+</div>
+<!-- PERSPECTIVE / VIEWPORT PROJECTION SELECTORS -->
+<div class="flex items-center gap-1.5" id="viewport-mode-group">
+<button class="px-space-sm py-1 bg-surface-container-lowest text-on-surface font-label-md text-label-md uppercase tracking-wider shadow-[3px_3px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none hover:bg-surface-container" onclick="selectViewportMode(this)">ORTHO</button>
+<button class="px-space-sm py-1 bg-primary-container text-on-primary-fixed font-label-md text-label-md font-bold uppercase tracking-wider shadow-[3px_3px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" onclick="selectViewportMode(this)">PERSPECTIVE 3D</button>
+<button class="px-space-sm py-1 bg-surface-container-lowest text-on-surface font-label-md text-label-md uppercase tracking-wider shadow-[3px_3px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none hover:bg-surface-container" onclick="selectViewportMode(this)">WIREFRAME</button>
+<button class="px-space-sm py-1 bg-surface-container-lowest text-on-surface font-label-md text-label-md uppercase tracking-wider shadow-[3px_3px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none hover:bg-surface-container" onclick="selectViewportMode(this)">RAY-TRACE FLAT</button>
+</div>
+</header>
+<!-- MAIN CHASSIS: DUAL TACTILE INSPECTORS + CENTRAL THREE.JS VIEWPORT -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg w-full items-start">
+<!-- LEFT FLOAT CARD: BRUSH & TACTILE TOOL PARAMETERS -->
+<aside class="xl:col-span-3 flex flex-col gap-space-md bg-surface-container-low p-space-md shadow-[6px_6px_0px_0px_#000000]">
+<!-- PANEL TITLEBAR -->
+<div class="flex items-center justify-between bg-surface-container-highest px-space-sm py-1 shadow-[2px_2px_0px_0px_#000000]">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary-container">tune</span>
+<span class="font-label-md text-label-md uppercase font-bold tracking-wider text-primary">TOOL PARAMETERS</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-2 h-2 bg-secondary-container"></span>
+<span class="font-code text-label-sm text-outline">FIXED-3D</span>
+</div>
+</div>
+<!-- STROKE WEIGHT MATRIX (PHYSICAL PUSH BUTTON SELECTORS) -->
+<div class="bg-surface-container p-space-sm shadow-[3px_3px_0px_0px_#000000]">
+<div class="flex justify-between items-center mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">STROKE BEVEL WEIGHT</span>
+<span class="font-code text-label-md text-primary-container font-bold" id="active-stroke-label">16 PX</span>
+</div>
+<div class="grid grid-cols-4 gap-1.5" id="stroke-weight-rack">
+<button class="py-1.5 bg-surface-container-highest text-on-surface font-code text-label-md text-center shadow-[3px_3px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" onclick="setStrokeWeight(this, '1')">1</button>
+<button class="py-1.5 bg-surface-container-highest text-on-surface font-code text-label-md text-center shadow-[3px_3px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" onclick="setStrokeWeight(this, '2')">2</button>
+<button class="py-1.5 bg-surface-container-highest text-on-surface font-code text-label-md text-center shadow-[3px_3px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" onclick="setStrokeWeight(this, '4')">4</button>
+<button class="py-1.5 bg-surface-container-highest text-on-surface font-code text-label-md text-center shadow-[3px_3px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" onclick="setStrokeWeight(this, '8')">8</button>
+<button class="py-1.5 bg-primary-container text-on-primary-fixed font-code text-label-md text-center font-bold shadow-[1px_1px_0px_0px_#000000] translate-x-[2px] translate-y-[2px]" onclick="setStrokeWeight(this, '16')">16</button>
+<button class="py-1.5 bg-surface-container-highest text-on-surface font-code text-label-md text-center shadow-[3px_3px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" onclick="setStrokeWeight(this, '32')">32</button>
+<button class="py-1.5 bg-surface-container-highest text-on-surface font-code text-label-md text-center shadow-[3px_3px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" onclick="setStrokeWeight(this, '64')">64</button>
+<button class="py-1.5 bg-surface-container-highest text-on-surface font-code text-label-md text-center shadow-[3px_3px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" onclick="setStrokeWeight(this, '128')">128</button>
+</div>
+</div>
+<!-- HARDNESS & OPACITY HARD BADGES -->
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="bg-surface-container p-space-sm shadow-[3px_3px_0px_0px_#000000] flex flex-col justify-between">
+<span class="font-label-sm text-label-sm uppercase text-outline">HARDNESS PROFILE</span>
+<div class="mt-1 flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 bg-primary-container block"></span>
+<span class="font-code text-label-md text-primary font-bold tracking-tight">100% SOLID</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">NO BLUR / RAW</span>
+</div>
+<div class="bg-surface-container p-space-sm shadow-[3px_3px_0px_0px_#000000] flex flex-col justify-between">
+<span class="font-label-sm text-label-sm uppercase text-outline">OPACITY LATCH</span>
+<div class="mt-1 flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 bg-secondary-container block"></span>
+<span class="font-code text-label-md text-secondary-container font-bold tracking-tight">100% OPAQUE</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">ZERO FALLOFF</span>
+</div>
+</div>
+<!-- 8 SOLID BIT-PATTERNS (PURE RETRO TACTILE HATCHES) -->
+<div class="bg-surface-container p-space-sm shadow-[3px_3px_0px_0px_#000000]">
+<div class="flex justify-between items-center mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">FILL DITHER / TEXTURE</span>
+<span class="font-code text-label-sm text-secondary-container">8-BIT MESH</span>
+</div>
+<div class="grid grid-cols-4 gap-2" id="bit-pattern-rack">
+<!-- Pattern 01: 50% Checker -->
+<button class="h-10 bg-surface-container-lowest flex items-center justify-center shadow-[3px_3px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none border-2 border-primary-container" title="Checker 50%">
+<svg class="text-primary-container fill-current" height="24" viewbox="0 0 24 24" width="24">
+<rect height="6" width="6" x="0" y="0"></rect>
+<rect height="6" width="6" x="12" y="0"></rect>
+<rect height="6" width="6" x="6" y="6"></rect>
+<rect height="6" width="6" x="18" y="6"></rect>
+<rect height="6" width="6" x="0" y="12"></rect>
+<rect height="6" width="6" x="12" y="12"></rect>
+<rect height="6" width="6" x="6" y="18"></rect>
+<rect height="6" width="6" x="18" y="18"></rect>
+</svg>
+</button>
+<!-- Pattern 02: 25% Fine Stipple -->
+<button class="h-10 bg-surface-container-lowest flex items-center justify-center shadow-[3px_3px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Fine Stipple">
+<svg class="text-on-surface fill-current" height="24" viewbox="0 0 24 24" width="24">
+<rect height="3" width="3" x="0" y="0"></rect>
+<rect height="3" width="3" x="12" y="0"></rect>
+<rect height="3" width="3" x="6" y="12"></rect>
+<rect height="3" width="3" x="18" y="12"></rect>
+</svg>
+</button>
+<!-- Pattern 03: Diagonal Hatch Right -->
+<button class="h-10 bg-surface-container-lowest flex items-center justify-center shadow-[3px_3px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Diagonal 45°">
+<svg class="text-on-surface stroke-current" height="24" stroke-width="2" viewbox="0 0 24 24" width="24">
+<line x1="0" x2="24" y1="0" y2="24"></line>
+<line x1="12" x2="24" y1="0" y2="12"></line>
+<line x1="0" x2="12" y1="12" y2="24"></line>
+</svg>
+</button>
+<!-- Pattern 04: Diagonal Hatch Left -->
+<button class="h-10 bg-surface-container-lowest flex items-center justify-center shadow-[3px_3px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Counter-Diagonal">
+<svg class="text-on-surface stroke-current" height="24" stroke-width="2" viewbox="0 0 24 24" width="24">
+<line x1="24" x2="0" y1="0" y2="24"></line>
+<line x1="12" x2="0" y1="0" y2="12"></line>
+<line x1="24" x2="12" y1="12" y2="24"></line>
+</svg>
+</button>
+<!-- Pattern 05: Cross Hatch Grid -->
+<button class="h-10 bg-surface-container-lowest flex items-center justify-center shadow-[3px_3px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Cross Matrix">
+<svg class="text-on-surface stroke-current" height="24" stroke-width="2" viewbox="0 0 24 24" width="24">
+<line x1="0" x2="24" y1="8" y2="8"></line>
+<line x1="0" x2="24" y1="16" y2="16"></line>
+<line x1="8" x2="8" y1="0" y2="24"></line>
+<line x1="16" x2="16" y1="0" y2="24"></line>
+</svg>
+</button>
+<!-- Pattern 06: Vertical Bars -->
+<button class="h-10 bg-surface-container-lowest flex items-center justify-center shadow-[3px_3px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Vertical Slices">
+<svg class="text-on-surface fill-current" height="24" viewbox="0 0 24 24" width="24">
+<rect height="24" width="4" x="2" y="0"></rect>
+<rect height="24" width="4" x="10" y="0"></rect>
+<rect height="24" width="4" x="18" y="0"></rect>
+</svg>
+</button>
+<!-- Pattern 07: Horizontal Bars -->
+<button class="h-10 bg-surface-container-lowest flex items-center justify-center shadow-[3px_3px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Horizontal Scan">
+<svg class="text-on-surface fill-current" height="24" viewbox="0 0 24 24" width="24">
+<rect height="4" width="24" x="0" y="2"></rect>
+<rect height="4" width="24" x="0" y="10"></rect>
+<rect height="4" width="24" x="0" y="18"></rect>
+</svg>
+</button>
+<!-- Pattern 08: 100% Solid Ink -->
+<button class="h-10 bg-surface-container-lowest flex items-center justify-center shadow-[3px_3px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Full Solid Ink">
+<div class="w-5 h-5 bg-on-surface"></div>
+</button>
+</div>
+</div>
+<!-- EXTRUSION DEPTH STEPPER -->
+<div class="bg-surface-container p-space-sm shadow-[3px_3px_0px_0px_#000000]">
+<div class="flex justify-between items-center mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-outline">3D EXTRUSION DEPTH</span>
+<span class="font-code text-label-md text-secondary-container font-bold">48 Z-PX</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-7 bg-surface-container-highest text-on-surface font-code text-label-lg shadow-[2px_2px_0px_0px_#000000] active:translate-x-[1px] active:translate-y-[1px] active:shadow-none">-</button>
+<div class="flex-1 bg-surface-container-lowest h-7 flex items-center px-2 shadow-[inset_2px_2px_0px_0px_#000000]">
+<div class="w-3/5 h-3 bg-primary-container"></div>
+<div class="w-2/5 h-3 bg-surface-container-high"></div>
+</div>
+<button class="w-8 h-7 bg-surface-container-highest text-on-surface font-code text-label-lg shadow-[2px_2px_0px_0px_#000000] active:translate-x-[1px] active:translate-y-[1px] active:shadow-none">+</button>
+</div>
+</div>
+<!-- RASTER BRUSH SHAPE TOGGLE -->
+<div class="flex gap-1.5">
+<button class="flex-1 py-1 bg-primary-container text-on-primary-fixed font-label-md text-label-md font-bold uppercase shadow-[3px_3px_0px_0px_#000000]">SQUARE PIXEL</button>
+<button class="flex-1 py-1 bg-surface-container-highest text-on-surface font-label-md text-label-md uppercase shadow-[3px_3px_0px_0px_#000000] hover:bg-surface-container">DIAMOND 45°</button>
+</div>
+</aside>
+<!-- CENTER VIEWPORT: THE THREE.JS 3D CANVAS STAGE -->
+<section class="xl:col-span-6 flex flex-col gap-space-sm">
+<div class="relative bg-surface-container-lowest shadow-[8px_8px_0px_0px_#000000] overflow-hidden">
+<!-- ISOMETRIC TECHNICAL CAD HUD OVERLAYS (CORNERS) -->
+<!-- TOP-LEFT: STATUS & CAMERA VIEWPORT BADGE -->
+<div class="absolute top-3 left-3 z-30 flex flex-col gap-1 pointer-events-none">
+<div class="flex items-center gap-1.5 bg-surface-container-lowest px-2 py-1 shadow-[3px_3px_0px_0px_#000000]">
+<span class="w-2 h-2 bg-[#00e676] inline-block"></span>
+<span class="font-code text-label-sm text-primary font-bold">VIEWPORT: 3D PERSPECTIVE ACTIVE</span>
+</div>
+<div class="bg-surface-container-lowest px-2 py-0.5 shadow-[2px_2px_0px_0px_#000000] font-code text-label-sm text-outline">
+            FOV: 45° | LENS: 50MM ORTHO-PIN
+          </div>
+</div>
+<!-- TOP-RIGHT: GIZMO & TRANSFORM READOUTS -->
+<div class="absolute top-3 right-3 z-30 flex flex-col gap-1 pointer-events-none items-end">
+<div class="flex items-center gap-2 bg-surface-container-lowest px-2 py-1 shadow-[3px_3px_0px_0px_#000000]">
+<span class="font-code text-label-sm text-secondary-container font-bold">ROT [X: 18° Y: 44° Z: 0°]</span>
+<span class="bg-surface-container-high px-1 text-label-sm font-code text-primary">SCALE: 1.0X</span>
+</div>
+<div class="bg-surface-container-lowest px-2 py-0.5 shadow-[2px_2px_0px_0px_#000000] font-code text-label-sm text-primary-container">
+            MESH: 7 GEOMS | 1,482 FACES
+          </div>
+</div>
+<!-- FOUR CORNER CAD / PRINT REGISTRATION MARKS (CRISP SOLID NEON CYAN) -->
+<div class="absolute top-2 left-2 z-20 pointer-events-none">
+<svg class="text-primary-container stroke-current" height="18" stroke-width="2" viewbox="0 0 18 18" width="18">
+<line x1="0" x2="16" y1="0" y2="0"></line>
+<line x1="0" x2="0" y1="0" y2="16"></line>
+</svg>
+</div>
+<div class="absolute top-2 right-2 z-20 pointer-events-none">
+<svg class="text-primary-container stroke-current" height="18" stroke-width="2" viewbox="0 0 18 18" width="18">
+<line x1="2" x2="18" y1="0" y2="0"></line>
+<line x1="18" x2="18" y1="0" y2="16"></line>
+</svg>
+</div>
+<div class="absolute bottom-2 left-2 z-20 pointer-events-none">
+<svg class="text-primary-container stroke-current" height="18" stroke-width="2" viewbox="0 0 18 18" width="18">
+<line x1="0" x2="16" y1="18" y2="18"></line>
+<line x1="0" x2="0" y1="2" y2="18"></line>
+</svg>
+</div>
+<div class="absolute bottom-2 right-2 z-20 pointer-events-none">
+<svg class="text-primary-container stroke-current" height="18" stroke-width="2" viewbox="0 0 18 18" width="18">
+<line x1="2" x2="18" y1="18" y2="18"></line>
+<line x1="18" x2="18" y1="2" y2="18"></line>
+</svg>
+</div>
+<!-- THREE.JS 3D VIEWPORT EMBED (CUSTOM ELEMENT) -->
+<div class="relative w-full h-[520px] bg-[#0c0e11] overflow-hidden">
+<!-- STITCH_THREEJS_START:ANIMATION_2 class="w-full h-[520px] rounded-none block" -->
+<div class="w-full h-[520px] rounded-none block" style="display:block;">
+<script src="https://ajax.googleapis.com/ajax/libs/threejs/r125/three.min.js"></script>
+<div id="threejs-container-ANIMATION_2" style="width:100%;height:100%"></div>
+<script>
+(function() {
+  const container = document.getElementById('threejs-container-ANIMATION_2');
+  const devicePixelRatio = window.devicePixelRatio || 1;
+  // Interactive 3D Canvas Scene for Cyber-Paint Studio
+// Pure solid flat colors, hard directional shadows, responsive viewport, interactive mouse tracking
+const width = container.clientWidth || window.innerWidth;
+const height = container.clientHeight || 500;
+
+const scene = new THREE.Scene();
+scene.background = null; // transparent to sit cleanly on the canvas
+
+const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
+camera.position.set(0, 1.5, 9);
+camera.lookAt(0, 0, 0);
+
+const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true, powerPreference: "high-performance" });
+renderer.setSize(width, height);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.BasicShadowMap; // Hard crisp shadows, no soft blurry filtering
+container.appendChild(renderer.domElement);
+
+// Lighting: Strong directional lights creating bold, hard-edged shading without gradient falloff
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.7);
+scene.add(ambientLight);
+
+const dirLight = new THREE.DirectionalLight(0xffffff, 1.2);
+dirLight.position.set(6, 12, 8);
+dirLight.castShadow = true;
+dirLight.shadow.mapSize.width = 1024;
+dirLight.shadow.mapSize.height = 1024;
+dirLight.shadow.camera.near = 0.5;
+dirLight.shadow.camera.far = 30;
+dirLight.shadow.camera.left = -6;
+dirLight.shadow.camera.right = 6;
+dirLight.shadow.camera.top = 6;
+dirLight.shadow.camera.bottom = -6;
+scene.add(dirLight);
+
+// Solid vibrant materials (pure Lambert flat shaded without specular gradients)
+const materials = {
+  cyan: new THREE.MeshLambertMaterial({ color: 0x00F0FF, flatShading: true }),
+  yellow: new THREE.MeshLambertMaterial({ color: 0xFFE600, flatShading: true }),
+  magenta: new THREE.MeshLambertMaterial({ color: 0xFF007A, flatShading: true }),
+  lime: new THREE.MeshLambertMaterial({ color: 0x00E676, flatShading: true }),
+  orange: new THREE.MeshLambertMaterial({ color: 0xFF7A00, flatShading: true }),
+  blue: new THREE.MeshLambertMaterial({ color: 0x2962FF, flatShading: true }),
+  black: new THREE.MeshLambertMaterial({ color: 0x111317, flatShading: true }),
+  white: new THREE.MeshLambertMaterial({ color: 0xF4F6F9, flatShading: true })
+};
+
+const objectsGroup = new THREE.Group();
+scene.add(objectsGroup);
+
+// 1. Central Hero Geometric Cluster - "Cyber Paint Pen / Cylinder & Cubes"
+// Isometric styled floating composition
+const cubeGeo = new THREE.BoxGeometry(1.6, 1.6, 1.6);
+const centralCube = new THREE.Mesh(cubeGeo, materials.yellow);
+centralCube.position.set(-1.8, 0.4, 0);
+centralCube.castShadow = true;
+centralCube.receiveShadow = true;
+objectsGroup.add(centralCube);
+
+// Stylized Cylinder (Paint can / Stamper)
+const cylGeo = new THREE.CylinderGeometry(1.1, 1.1, 2.0, 16);
+const cylinderMesh = new THREE.Mesh(cylGeo, materials.cyan);
+cylinderMesh.position.set(1.9, 0.6, -0.5);
+cylinderMesh.rotation.x = 0.35;
+cylinderMesh.rotation.z = -0.2;
+cylinderMesh.castShadow = true;
+cylinderMesh.receiveShadow = true;
+objectsGroup.add(cylinderMesh);
+
+// Stylized Pyramid / Prism (Selection tool indicator)
+const coneGeo = new THREE.ConeGeometry(1.2, 1.9, 4);
+const prismMesh = new THREE.Mesh(coneGeo, materials.magenta);
+prismMesh.position.set(0.2, 1.8, 0.6);
+prismMesh.rotation.y = Math.PI / 4;
+prismMesh.rotation.z = 0.15;
+prismMesh.castShadow = true;
+prismMesh.receiveShadow = true;
+objectsGroup.add(prismMesh);
+
+// Floating Sphere (Brush tip / Pixel orb)
+const sphereGeo = new THREE.IcosahedronGeometry(0.9, 1); // faceted retro look
+const sphereMesh = new THREE.Mesh(sphereGeo, materials.lime);
+sphereMesh.position.set(-0.8, -1.2, 1.2);
+sphereMesh.castShadow = true;
+sphereMesh.receiveShadow = true;
+objectsGroup.add(sphereMesh);
+
+// Floating Mini-Cubes (Pixel debris / paint droplets)
+const miniCubes = [];
+const miniGeo = new THREE.BoxGeometry(0.45, 0.45, 0.45);
+const dropletColors = [materials.orange, materials.blue, materials.white, materials.magenta, materials.cyan];
+
+for (let i = 0; i < 7; i++) {
+  const mesh = new THREE.Mesh(miniGeo, dropletColors[i % dropletColors.length]);
+  const angle = (i / 7) * Math.PI * 2;
+  const radius = 3.2 + Math.sin(i) * 0.5;
+  mesh.position.set(Math.cos(angle) * radius, Math.sin(angle) * 1.5 + Math.cos(i * 2) * 0.5, (i % 3 - 1) * 0.8);
+  mesh.castShadow = true;
+  mesh.receiveShadow = true;
+  objectsGroup.add(mesh);
+  miniCubes.push({ mesh, speed: 0.015 + (i * 0.005), baseAngle: angle, radius });
+}
+
+// Flat Studio Floor / Shadow Catcher Plane with crisp shadow
+const shadowPlaneGeo = new THREE.PlaneGeometry(30, 20);
+const shadowPlaneMat = new THREE.ShadowMaterial({ opacity: 0.25 });
+const shadowPlane = new THREE.Mesh(shadowPlaneGeo, shadowPlaneMat);
+shadowPlane.position.set(0, -2.2, 0);
+shadowPlane.rotation.x = -Math.PI / 2;
+shadowPlane.receiveShadow = true;
+scene.add(shadowPlane);
+
+// Interactive mouse parallax & rotation tracking
+let mouseX = 0;
+let mouseY = 0;
+let targetX = 0;
+let targetY = 0;
+
+function onMouseMove(e) {
+  const rect = container.getBoundingClientRect();
+  const relX = (e.clientX - rect.left) / rect.width;
+  const relY = (e.clientY - rect.top) / rect.height;
+  targetX = (relX - 0.5) * 2;
+  targetY = (relY - 0.5) * 2;
+}
+
+container.addEventListener('mousemove', onMouseMove);
+window.addEventListener('mousemove', (e) => {
+  // subtle fallback tracking even if mouse slightly wanders outside canvas
+  const x = (e.clientX / window.innerWidth - 0.5) * 2;
+  const y = (e.clientY / window.innerHeight - 0.5) * 2;
+  targetX = THREE.MathUtils.lerp(targetX, x, 0.1);
+  targetY = THREE.MathUtils.lerp(targetY, y, 0.1);
+});
+
+// Click interaction: gentle burst spin
+let spinBurst = 0;
+container.addEventListener('click', () => {
+  spinBurst = 0.18;
+});
+
+function onResize() {
+  const w = container.clientWidth || window.innerWidth;
+  const h = container.clientHeight || 500;
+  camera.aspect = w / h;
+  camera.updateProjectionMatrix();
+  renderer.setSize(w, h);
+}
+window.addEventListener('resize', onResize);
+
+// Animation Loop
+let clock = new THREE.Clock();
+
+function animate() {
+  requestAnimationFrame(animate);
+  const delta = clock.getDelta();
+  const time = clock.getElapsedTime();
+
+  // Smooth lerp mouse tracking
+  mouseX += (targetX - mouseX) * 0.05;
+  mouseY += (targetY - mouseY) * 0.05;
+
+  spinBurst = Math.max(0, spinBurst - delta * 0.1);
+
+  // Group rotation with smooth response
+  objectsGroup.rotation.y = time * 0.2 + mouseX * 0.45 + spinBurst;
+  objectsGroup.rotation.x = mouseY * 0.25;
+
+  // Individual object dancing rotations
+  centralCube.rotation.x = time * 0.5;
+  centralCube.rotation.y = time * 0.6;
+  centralCube.position.y = 0.4 + Math.sin(time * 1.5) * 0.2;
+
+  cylinderMesh.rotation.y = time * 0.4;
+  cylinderMesh.position.y = 0.6 + Math.cos(time * 1.8) * 0.25;
+
+  prismMesh.rotation.y = time * 0.7;
+  prismMesh.position.y = 1.8 + Math.sin(time * 2.1) * 0.18;
+
+  sphereMesh.rotation.z = time * 0.3;
+  sphereMesh.position.y = -1.2 + Math.cos(time * 1.6) * 0.15;
+
+  // Orbiting mini cubes
+  miniCubes.forEach((item, idx) => {
+    const curAngle = item.baseAngle + time * item.speed * 1.5;
+    item.mesh.position.x = Math.cos(curAngle) * item.radius;
+    item.mesh.position.z = Math.sin(curAngle) * item.radius * 0.7;
+    item.mesh.position.y = Math.sin(time * 2 + idx) * 0.4 + (idx % 2 === 0 ? 0.3 : -0.5);
+    item.mesh.rotation.x += 0.02;
+    item.mesh.rotation.y += 0.03;
+  });
+
+  renderer.render(scene, camera);
+}
+
+animate();
+
+})();
+</script>
+</div>
+<!-- STITCH_THREEJS_END:ANIMATION_2 -->
+<!-- TECHNICAL ISOMETRIC GRID RETICLE OVERLAY -->
+<div class="absolute inset-0 pointer-events-none" style="background-image: linear-gradient(to right, #1e2023 1px, transparent 1px), linear-gradient(to bottom, #1e2023 1px, transparent 1px); background-size: 32px 32px; opacity: 0.45;"></div>
+<!-- FLOATING AXIS CROSSHAIR -->
+<div class="absolute bottom-4 left-4 z-20 flex items-center gap-1.5 bg-surface-container-lowest px-2 py-1 shadow-[2px_2px_0px_0px_#000000]">
+<span class="font-code text-label-sm font-bold text-[#ff3344]">X+</span>
+<span class="font-code text-label-sm font-bold text-[#00e676]">Y+</span>
+<span class="font-code text-label-sm font-bold text-[#00f0ff]">Z+</span>
+<span class="font-label-sm text-label-sm text-outline ml-1">GIZMO LOCKED</span>
+</div>
+<!-- INTERACTIVE CANVAS QUICK TOGGLES (BOTTOM RIGHT OVERLAY) -->
+<div class="absolute bottom-4 right-4 z-20 flex items-center gap-1">
+<button class="w-8 h-8 bg-surface-container text-on-surface flex items-center justify-center shadow-[2px_2px_0px_0px_#000000] active:translate-x-[1px] active:translate-y-[1px] active:shadow-none hover:bg-surface-container-highest" title="Center Camera">
+<span class="material-symbols-outlined text-[18px]">filter_center_focus</span>
+</button>
+<button class="w-8 h-8 bg-surface-container text-on-surface flex items-center justify-center shadow-[2px_2px_0px_0px_#000000] active:translate-x-[1px] active:translate-y-[1px] active:shadow-none hover:bg-surface-container-highest" title="Snapshot 3D Stage">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</button>
+<button class="w-8 h-8 bg-primary-container text-on-primary-fixed flex items-center justify-center shadow-[2px_2px_0px_0px_#000000] active:translate-x-[1px] active:translate-y-[1px] active:shadow-none" title="Rotate Isometric Stage">
+<span class="material-symbols-outlined text-[18px]">3d_rotation</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CANVAS BOTTOM METRIC SCROLLER STRIP -->
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-1 shadow-[3px_3px_0px_0px_#000000]">
+<div class="flex items-center gap-space-md font-code text-label-sm text-on-surface-variant">
+<span>BOUNDS: [X: 0 Y: 0 W: 1920 H: 1080]</span>
+<span class="text-primary">SAMPLING: NEAREST-NEIGHBOR</span>
+<span class="hidden sm:inline text-secondary-container">SHADING: FLAT POLY</span>
+</div>
+<div class="flex items-center gap-1 font-code text-label-sm text-outline">
+<span>CANVAS READY</span>
+<span class="w-1.5 h-1.5 bg-primary-container"></span>
+</div>
+</div>
+</section>
+<!-- RIGHT FLOAT CARD: ACTIVE SCENE LAYERS & 3D GEOMETRIES -->
+<aside class="xl:col-span-3 flex flex-col gap-space-md bg-surface-container-low p-space-md shadow-[6px_6px_0px_0px_#000000]">
+<!-- PANEL TITLEBAR -->
+<div class="flex items-center justify-between bg-surface-container-highest px-space-sm py-1 shadow-[2px_2px_0px_0px_#000000]">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">layers</span>
+<span class="font-label-md text-label-md uppercase font-bold tracking-wider text-secondary-fixed">SCENE GEOMETRY</span>
+</div>
+<span class="font-code text-label-sm text-on-surface-variant">4 LAYERS</span>
+</div>
+<!-- RETRO LAYER STACK (PHYSICAL TOGGLES & 3D HARD SHADOWS) -->
+<div class="flex flex-col gap-1.5" id="layers-stack-rack">
+<!-- LAYER 03: Poly-Prism -->
+<div class="bg-surface-container p-2 flex items-center justify-between shadow-[3px_3px_0px_0px_#000000] hover:bg-surface-container-high cursor-pointer">
+<div class="flex items-center gap-2">
+<button class="w-5 h-5 bg-surface-container-highest flex items-center justify-center shadow-[1px_1px_0px_0px_#000000]" title="Visibility">
+<span class="material-symbols-outlined text-[14px] text-primary">visibility</span>
+</button>
+<span class="w-3 h-3 bg-[#ff007a] inline-block shadow-[1px_1px_0px_0px_#000000]"></span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">03: Poly-Prism</span>
+<span class="font-code text-[9px] text-outline">TRIS: 340 | Z: +40</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-outline">lock</span>
+<span class="font-label-sm text-[9px] bg-surface-container-lowest text-outline px-1 py-0.5">MESH</span>
+</div>
+</div>
+<!-- LAYER 02: Iso-Cylinder -->
+<div class="bg-surface-container p-2 flex items-center justify-between shadow-[3px_3px_0px_0px_#000000] hover:bg-surface-container-high cursor-pointer">
+<div class="flex items-center gap-2">
+<button class="w-5 h-5 bg-surface-container-highest flex items-center justify-center shadow-[1px_1px_0px_0px_#000000]" title="Visibility">
+<span class="material-symbols-outlined text-[14px] text-primary">visibility</span>
+</button>
+<span class="w-3 h-3 bg-primary-container inline-block shadow-[1px_1px_0px_0px_#000000]"></span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">02: Iso-Cylinder</span>
+<span class="font-code text-[9px] text-outline">TRIS: 512 | Z: +18</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">lock_open</span>
+<span class="font-label-sm text-[9px] bg-surface-container-lowest text-primary px-1 py-0.5">PRISM</span>
+</div>
+</div>
+<!-- LAYER 01: Vector-Cube (ACTIVE SELECTED) -->
+<div class="bg-surface-container-highest p-2 flex items-center justify-between shadow-[inset_2px_2px_0px_0px_#000000,4px_4px_0px_0px_#000000] border-l-4 border-secondary-container">
+<div class="flex items-center gap-2">
+<button class="w-5 h-5 bg-primary-container text-on-primary-fixed flex items-center justify-center shadow-[1px_1px_0px_0px_#000000]" title="Visibility">
+<span class="material-symbols-outlined text-[14px] text-on-primary-fixed">visibility</span>
+</button>
+<span class="w-3 h-3 bg-secondary-container inline-block shadow-[1px_1px_0px_0px_#000000]"></span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-secondary-container">01: Vector-Cube</span>
+<span class="font-code text-[9px] text-primary font-bold">ACTIVE TRANSFORM | Z: 0</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-bold px-1.5 py-0.5 shadow-[1px_1px_0px_0px_#000000]">SEL</span>
+</div>
+</div>
+<!-- LAYER 00: Solid Canvas Background -->
+<div class="bg-surface-container p-2 flex items-center justify-between shadow-[3px_3px_0px_0px_#000000] hover:bg-surface-container-high cursor-pointer">
+<div class="flex items-center gap-2">
+<button class="w-5 h-5 bg-surface-container-highest flex items-center justify-center shadow-[1px_1px_0px_0px_#000000]" title="Visibility">
+<span class="material-symbols-outlined text-[14px] text-primary">visibility</span>
+</button>
+<span class="w-3 h-3 bg-[#12141a] inline-block shadow-[1px_1px_0px_0px_#000000]"></span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant">00: Background Stage</span>
+<span class="font-code text-[9px] text-outline">SOLID MONOLITH #12141A</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-outline">lock</span>
+<span class="font-label-sm text-[9px] bg-surface-container-lowest text-outline px-1 py-0.5">BASE</span>
+</div>
+</div>
+</div>
+<!-- GEOMETRY ACTION BUTTONS WITH CRISP 4PX SOLID SHADOWS -->
+<div class="flex flex-col gap-2 mt-space-xs">
+<button class="w-full py-2 bg-secondary-container text-on-secondary-container font-label-md text-label-md uppercase font-bold tracking-wider shadow-[4px_4px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none flex items-center justify-center gap-1.5 hover:bg-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">add_box</span>
+          + ADD 3D OBJECT
+        </button>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-1.5 bg-primary-container text-on-primary-fixed font-label-md text-label-md uppercase font-bold tracking-wider shadow-[4px_4px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px]">call_merge</span>
+            MERGE FLAT
+          </button>
+<button class="py-1.5 bg-surface-container-highest text-on-surface font-label-md text-label-md uppercase font-bold tracking-wider shadow-[4px_4px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none hover:bg-surface-container flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px]">expand</span>
+            EXTRUDE MESH
+          </button>
+</div>
+</div>
+<!-- MATERIAL PROFILE BOX (PHYSICAL TOGGLE) -->
+<div class="bg-surface-container p-space-sm shadow-[3px_3px_0px_0px_#000000]">
+<span class="font-label-sm text-label-sm uppercase text-outline">SURFACE RENDER SHADER</span>
+<div class="grid grid-cols-3 gap-1 mt-1">
+<button class="py-1 bg-primary-container text-on-primary-fixed font-label-sm text-label-sm font-bold text-center shadow-[2px_2px_0px_0px_#000000]">FLAT-CHISEL</button>
+<button class="py-1 bg-surface-container-highest text-on-surface font-label-sm text-label-sm text-center shadow-[2px_2px_0px_0px_#000000]">TOON-INK</button>
+<button class="py-1 bg-surface-container-highest text-on-surface font-label-sm text-label-sm text-center shadow-[2px_2px_0px_0px_#000000]">LAMBERT</button>
+</div>
+</div>
+</aside>
+</div>
+<!-- INTERACTIVE COLOR PALETTE BAR (BOTTOM STUDIO CHASSIS) -->
+<section class="flex flex-col gap-space-sm bg-surface-container-high p-space-md shadow-[6px_6px_0px_0px_#000000]">
+<div class="flex flex-wrap items-center justify-between gap-space-md border-b-2 border-[#000000] pb-space-xs">
+<div class="flex items-center gap-space-md">
+<!-- DUAL WELL: FOREGROUND & BACKGROUND CURRENT SELECTION -->
+<div class="flex items-center gap-2 bg-surface-container-lowest p-1.5 shadow-[3px_3px_0px_0px_#000000]">
+<div class="relative w-12 h-10 bg-surface-container-high shadow-[2px_2px_0px_0px_#000000]">
+<div class="absolute top-0.5 left-0.5 w-6 h-6 bg-[#00f0ff] shadow-[2px_2px_0px_0px_#000000] z-10 cursor-pointer" id="fg-color-box" title="Foreground (Active)"></div>
+<div class="absolute bottom-0.5 right-0.5 w-6 h-6 bg-[#111317] shadow-[2px_2px_0px_0px_#000000] cursor-pointer" id="bg-color-box" title="Background (Paper)"></div>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-outline">ACTIVE INK</span>
+<span class="font-code text-label-md text-primary font-bold" id="active-hex-code">#00F0FF</span>
+<span class="font-code text-[10px] text-outline">BG: #111317</span>
+</div>
+</div>
+<!-- QUICK PALETTE HARD HARDWARE ACTION BUTTONS -->
+<div class="flex flex-wrap items-center gap-1.5">
+<button class="px-space-sm py-1.5 bg-surface-container-lowest text-on-surface font-label-md text-label-md uppercase tracking-wider shadow-[3px_3px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none hover:bg-surface-container" onclick="invertActiveColor()">
+            INVERT COLORS
+          </button>
+<button class="px-space-sm py-1.5 bg-surface-container-lowest text-on-surface font-label-md text-label-md uppercase tracking-wider shadow-[3px_3px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none hover:bg-surface-container" onclick="setMonochrome()">
+            MONOCHROME SWITCH
+          </button>
+<button class="px-space-sm py-1.5 bg-surface-container-lowest text-on-surface font-label-md text-label-md uppercase tracking-wider shadow-[3px_3px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none hover:bg-surface-container">
+            SAMPLE SCREEN
+          </button>
+<button class="px-space-sm py-1.5 bg-primary-container text-on-primary-fixed font-label-md text-label-md font-bold uppercase tracking-wider shadow-[3px_3px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none">
+            EXPORT PALETTE .HEX
+          </button>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">PALETTE PROFILE:</span>
+<span class="bg-surface-container-lowest px-2 py-0.5 font-code text-label-sm text-secondary-container shadow-[2px_2px_0px_0px_#000000]">CYBER-SOLID 28-BIT</span>
+</div>
+</div>
+<!-- 28-COLOR INTERACTIVE SOLID NUANCIER GRID (TACTILE 3D LIFT & DROP SHADOWS) -->
+<div class="grid grid-rows-2 grid-cols-7 sm:grid-cols-14 gap-1.5 p-1 bg-surface-container-lowest shadow-[inset_3px_3px_0px_0px_#000000]" id="solid-color-matrix">
+<!-- ROW 1 -->
+<button class="h-8 w-full bg-[#ff3344] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#FF3344" onclick="applyColor('#FF3344')" title="Red Solid #FF3344"></button>
+<button class="h-8 w-full bg-[#ff7a00] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#FF7A00" onclick="applyColor('#FF7A00')" title="Orange #FF7A00"></button>
+<button class="h-8 w-full bg-[#ffb300] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#FFB300" onclick="applyColor('#FFB300')" title="Amber #FFB300"></button>
+<button class="h-8 w-full bg-[#ffe600] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#FFE600" onclick="applyColor('#FFE600')" title="Yellow #FFE600"></button>
+<button class="h-8 w-full bg-[#00e676] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#00E676" onclick="applyColor('#00E676')" title="Lime #00E676"></button>
+<button class="h-8 w-full bg-[#00bfa5] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#00BFA5" onclick="applyColor('#00BFA5')" title="Emerald #00BFA5"></button>
+<button class="h-8 w-full bg-[#00f0ff] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#00F0FF" onclick="applyColor('#00F0FF')" title="Cyan Neon #00F0FF"></button>
+<button class="h-8 w-full bg-[#2962ff] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#2962FF" onclick="applyColor('#2962FF')" title="Blue #2962FF"></button>
+<button class="h-8 w-full bg-[#651fff] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#651FFF" onclick="applyColor('#651FFF')" title="Indigo #651FFF"></button>
+<button class="h-8 w-full bg-[#aa00ff] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#AA00FF" onclick="applyColor('#AA00FF')" title="Violet #AA00FF"></button>
+<button class="h-8 w-full bg-[#ff007a] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#FF007A" onclick="applyColor('#FF007A')" title="Magenta #FF007A"></button>
+<button class="h-8 w-full bg-[#f50057] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#F50057" onclick="applyColor('#F50057')" title="Pink #F50057"></button>
+<button class="h-8 w-full bg-[#ffffff] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#FFFFFF" onclick="applyColor('#FFFFFF')" title="Mono Pure #FFFFFF"></button>
+<button class="h-8 w-full bg-[#d1d5db] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#D1D5DB" onclick="applyColor('#D1D5DB')" title="Mono Light #D1D5DB"></button>
+<!-- ROW 2 -->
+<button class="h-8 w-full bg-[#6b7280] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#6B7280" onclick="applyColor('#6B7280')" title="Mono Mid #6B7280"></button>
+<button class="h-8 w-full bg-[#374151] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#374151" onclick="applyColor('#374151')" title="Mono Dark #374151"></button>
+<button class="h-8 w-full bg-[#1f2937] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#1F2937" onclick="applyColor('#1F2937')" title="Mono Deep #1F2937"></button>
+<button class="h-8 w-full bg-[#000000] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#000000" onclick="applyColor('#000000')" title="Mono Black #000000"></button>
+<button class="h-8 w-full bg-[#004d40] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#004D40" onclick="applyColor('#004D40')" title="Deep Pine #004D40"></button>
+<button class="h-8 w-full bg-[#1b5e20] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#1B5E20" onclick="applyColor('#1B5E20')" title="Circuit Green #1B5E20"></button>
+<button class="h-8 w-full bg-[#827717] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#827717" onclick="applyColor('#827717')" title="Military Olive #827717"></button>
+<button class="h-8 w-full bg-[#e65100] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#E65100" onclick="applyColor('#E65100')" title="Industrial Rust #E65100"></button>
+<button class="h-8 w-full bg-[#b71c1c] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#B71C1C" onclick="applyColor('#B71C1C')" title="Crimson Core #B71C1C"></button>
+<button class="h-8 w-full bg-[#4a148c] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#4A148C" onclick="applyColor('#4A148C')" title="Deep Plasma #4A148C"></button>
+<button class="h-8 w-full bg-[#006064] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#006064" onclick="applyColor('#006064')" title="Dark Cyan #006064"></button>
+<button class="h-8 w-full bg-[#3e2723] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#3E2723" onclick="applyColor('#3E2723')" title="Bakelite #3E2723"></button>
+<button class="h-8 w-full bg-[#76ff03] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#76FF03" onclick="applyColor('#76FF03')" title="Phosphor #76FF03"></button>
+<button class="h-8 w-full bg-[#ffff00] shadow-[3px_3px_0px_0px_#000000] hover:-translate-y-1 hover:shadow-[5px_5px_0px_0px_#000000] active:translate-y-0.5 active:shadow-none transition-transform" data-hex="#FFFF00" onclick="applyColor('#FFFF00')" title="Pure Laser Yellow #FFFF00"></button>
+</div>
+</section>
+<!-- BOTTOM STATUS & REALTIME COORDINATES BAR -->
+<section class="flex flex-wrap items-center justify-between gap-space-sm bg-surface-container-lowest p-space-sm shadow-[4px_4px_0px_0px_#000000]">
+<!-- LIVE PIXEL CURSOR READOUT -->
+<div class="flex items-center gap-space-sm font-code text-label-sm">
+<span class="bg-surface-container px-2 py-0.5 text-primary-container font-bold shadow-[1px_1px_0px_0px_#000000]" id="live-cursor-coords">CURSOR: 842, 419 PX</span>
+<span class="bg-surface-container px-2 py-0.5 text-secondary-container shadow-[1px_1px_0px_0px_#000000]">DELTA: +12, -4</span>
+<span class="bg-surface-container px-2 py-0.5 text-on-surface shadow-[1px_1px_0px_0px_#000000]">SELECTION: 380 × 240 PX</span>
+</div>
+<!-- ENGINE STATUS / MEMORY LOG -->
+<div class="flex items-center gap-space-sm font-code text-label-sm">
+<span class="flex items-center gap-1 bg-surface-container px-2 py-0.5 text-[#00e676] shadow-[1px_1px_0px_0px_#000000]">
+<span class="w-1.5 h-1.5 bg-[#00e676]"></span>
+        3D RENDER LOOP: 60.0 FPS
+      </span>
+<span class="bg-surface-container px-2 py-0.5 text-on-surface-variant shadow-[1px_1px_0px_0px_#000000]">MEMORY: 42.8 MB OK</span>
+<span class="bg-surface-container px-2 py-0.5 text-primary font-bold shadow-[1px_1px_0px_0px_#000000]">ENGINE: PURE-FLAT-SHADING</span>
+<span class="bg-error-container text-on-error-container px-2 py-0.5 font-label-sm uppercase font-bold shadow-[1px_1px_0px_0px_#000000]">NO GRADIENTS</span>
+</div>
+</section>
+</div>
+<script>
+  // VIEWPORT SELECTOR TOGGLE
+  function selectViewportMode(btn) {
+    const group = document.getElementById('viewport-mode-group');
+    const buttons = group.querySelectorAll('button');
+    buttons.forEach(b => {
+      b.className = 'px-space-sm py-1 bg-surface-container-lowest text-on-surface font-label-md text-label-md uppercase tracking-wider shadow-[3px_3px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none hover:bg-surface-container';
+    });
+    btn.className = 'px-space-sm py-1 bg-primary-container text-on-primary-fixed font-label-md text-label-md font-bold uppercase tracking-wider shadow-[3px_3px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none';
+  }
+
+  // STROKE WEIGHT CHANGER
+  function setStrokeWeight(btn, size) {
+    const rack = document.getElementById('stroke-weight-rack');
+    const buttons = rack.querySelectorAll('button');
+    buttons.forEach(b => {
+      b.className = 'py-1.5 bg-surface-container-highest text-on-surface font-code text-label-md text-center shadow-[3px_3px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none';
+    });
+    btn.className = 'py-1.5 bg-primary-container text-on-primary-fixed font-code text-label-md text-center font-bold shadow-[1px_1px_0px_0px_#000000] translate-x-[2px] translate-y-[2px]';
+    const label = document.getElementById('active-stroke-label');
+    if (label) label.textContent = size + ' PX';
+  }
+
+  // INTERACTIVE COLOR APPLICATION
+  function applyColor(hex) {
+    const fgBox = document.getElementById('fg-color-box');
+    const hexLabel = document.getElementById('active-hex-code');
+    if (fgBox) fgBox.style.backgroundColor = hex;
+    if (hexLabel) hexLabel.textContent = hex;
+  }
+
+  // INVERT FG / BG COLOR
+  function invertActiveColor() {
+    const fgBox = document.getElementById('fg-color-box');
+    const hexLabel = document.getElementById('active-hex-code');
+    const current = hexLabel ? hexLabel.textContent : '#00F0FF';
+    const inverted = (current === '#00F0FF') ? '#FF007A' : '#00F0FF';
+    if (fgBox) fgBox.style.backgroundColor = inverted;
+    if (hexLabel) hexLabel.textContent = inverted;
+  }
+
+  // MONOCHROME SWITCH
+  function setMonochrome() {
+    applyColor('#FFFFFF');
+  }
+
+  // LIVE COORDINATES MOCK JITTER TO EMULATE ACTIVE CAD TRACKING
+  window.addEventListener('mousemove', (e) => {
+    const coordsEl = document.getElementById('live-cursor-coords');
+    if (coordsEl) {
+      const x = Math.min(1920, Math.max(0, Math.round(e.clientX * 1.5)));
+      const y = Math.min(1080, Math.max(0, Math.round(e.clientY * 1.5)));
+      coordsEl.textContent = 'CURSOR: ' + x + ', ' + y + ' PX';
+    }
+  });
+</script></main></div><footer class="fixed bottom-0 left-0 right-0 h-14 bg-surface-container-lowest border-t-2 border-[#000000] z-50 px-space-md flex items-center justify-between shadow-[0_-3px_0px_0px_#000000]"><div class="flex items-center gap-space-md"><div class="relative w-10 h-10 border-2 border-[#000000] bg-surface-container-highest flex items-center justify-center"><div class="absolute top-1 left-1 w-5 h-5 bg-primary-container border border-[#000000] z-10 shadow-[1px_1px_0px_0px_#000000]"></div><div class="absolute bottom-1 right-1 w-5 h-5 bg-[#ffffff] border border-[#000000] shadow-[1px_1px_0px_0px_#000000]"></div></div><div class="flex flex-col"><span class="font-code text-label-sm text-outline-variant">ACTIVE HEX</span><span class="font-code text-label-md text-primary font-bold">#00F0FF</span></div><div class="hidden sm:grid grid-rows-2 grid-flow-col gap-1 bg-surface-container-low p-1 border-2 border-[#000000]"><button class="w-4 h-4 border border-[#000000] bg-[#000000]"></button><button class="w-4 h-4 border border-[#000000] bg-[#ffffff]"></button><button class="w-4 h-4 border border-[#000000] bg-[#ff0055]"></button><button class="w-4 h-4 border border-[#000000] bg-[#00f0ff]"></button><button class="w-4 h-4 border border-[#000000] bg-[#ffe600]"></button><button class="w-4 h-4 border border-[#000000] bg-[#00e676]"></button><button class="w-4 h-4 border border-[#000000] bg-[#7928ca]"></button><button class="w-4 h-4 border border-[#000000] bg-[#ff7a00]"></button><button class="w-4 h-4 border border-[#000000] bg-[#0038ff]"></button><button class="w-4 h-4 border border-[#000000] bg-[#ff00aa]"></button><button class="w-4 h-4 border border-[#000000] bg-[#39ff14]"></button><button class="w-4 h-4 border border-[#000000] bg-[#666666]"></button><button class="w-4 h-4 border border-[#000000] bg-[#aaaaaa]"></button><button class="w-4 h-4 border border-[#000000] bg-[#ff3333]"></button><button class="w-4 h-4 border border-[#000000] bg-[#00bfff]"></button><button class="w-4 h-4 border border-[#000000] bg-[#ffea00]"></button><button class="w-4 h-4 border border-[#000000] bg-[#1de9b6]"></button><button class="w-4 h-4 border border-[#000000] bg-[#6200ea]"></button><button class="w-4 h-4 border border-[#000000] bg-[#ff6d00]"></button><button class="w-4 h-4 border border-[#000000] bg-[#2979ff]"></button><button class="w-4 h-4 border border-[#000000] bg-[#f50057]"></button><button class="w-4 h-4 border border-[#000000] bg-[#76ff03]"></button><button class="w-4 h-4 border border-[#000000] bg-[#424242]"></button><button class="w-4 h-4 border border-[#000000] bg-[#e0e0e0]"></button><button class="w-4 h-4 border border-[#000000] bg-[#ff5252]"></button><button class="w-4 h-4 border border-[#000000] bg-[#18ffff]"></button><button class="w-4 h-4 border border-[#000000] bg-[#ffff00]"></button><button class="w-4 h-4 border border-[#000000] bg-[#00e5ff]"></button></div></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-1 bg-surface-container px-space-sm py-1 border border-[#000000]"><span class="font-label-sm text-label-sm uppercase text-outline">BRUSH:</span><button class="w-5 h-5 bg-surface-container-highest text-on-surface border border-[#000000] font-label-sm flex items-center justify-center">-</button><span class="font-code text-label-md text-secondary-container px-1 font-bold">16px</span><button class="w-5 h-5 bg-surface-container-highest text-on-surface border border-[#000000] font-label-sm flex items-center justify-center">+</button></div><div class="hidden md:flex items-center bg-surface-container px-space-sm py-1 border border-[#000000] font-code text-label-sm text-on-surface-variant"><span class="w-2 h-2 bg-[#00e676] inline-block mr-1.5"></span>ENGINE: READY</div></div></footer><script src="js/site.js"></script></body></html>

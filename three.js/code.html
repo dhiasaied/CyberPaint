@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+    }
+  </style>
+</head>
+<body>
+<!-- STITCH_THREEJS_START:ANIMATION_2 class="fixed inset-0 w-full h-full bg-transparent" -->
+<div class="fixed inset-0 w-full h-full bg-transparent" style="display:block;">
+<script src="https://ajax.googleapis.com/ajax/libs/threejs/r125/three.min.js"></script>
+<div id="threejs-container-ANIMATION_2" style="width:100%;height:100%"></div>
+<script>
+(function() {
+  const container = document.getElementById('threejs-container-ANIMATION_2');
+  const devicePixelRatio = window.devicePixelRatio || 1;
+  // Interactive 3D Canvas Scene for Cyber-Paint Studio
+// Pure solid flat colors, hard directional shadows, responsive viewport, interactive mouse tracking
+const width = container.clientWidth || window.innerWidth;
+const height = container.clientHeight || 500;
+
+const scene = new THREE.Scene();
+scene.background = null; // transparent to sit cleanly on the canvas
+
+const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
+camera.position.set(0, 1.5, 9);
+camera.lookAt(0, 0, 0);
+
+const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true, powerPreference: "high-performance" });
+renderer.setSize(width, height);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.BasicShadowMap; // Hard crisp shadows, no soft blurry filtering
+container.appendChild(renderer.domElement);
+
+// Lighting: Strong directional lights creating bold, hard-edged shading without gradient falloff
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.7);
+scene.add(ambientLight);
+
+const dirLight = new THREE.DirectionalLight(0xffffff, 1.2);
+dirLight.position.set(6, 12, 8);
+dirLight.castShadow = true;
+dirLight.shadow.mapSize.width = 1024;
+dirLight.shadow.mapSize.height = 1024;
+dirLight.shadow.camera.near = 0.5;
+dirLight.shadow.camera.far = 30;
+dirLight.shadow.camera.left = -6;
+dirLight.shadow.camera.right = 6;
+dirLight.shadow.camera.top = 6;
+dirLight.shadow.camera.bottom = -6;
+scene.add(dirLight);
+
+// Solid vibrant materials (pure Lambert flat shaded without specular gradients)
+const materials = {
+  cyan: new THREE.MeshLambertMaterial({ color: 0x00F0FF, flatShading: true }),
+  yellow: new THREE.MeshLambertMaterial({ color: 0xFFE600, flatShading: true }),
+  magenta: new THREE.MeshLambertMaterial({ color: 0xFF007A, flatShading: true }),
+  lime: new THREE.MeshLambertMaterial({ color: 0x00E676, flatShading: true }),
+  orange: new THREE.MeshLambertMaterial({ color: 0xFF7A00, flatShading: true }),
+  blue: new THREE.MeshLambertMaterial({ color: 0x2962FF, flatShading: true }),
+  black: new THREE.MeshLambertMaterial({ color: 0x111317, flatShading: true }),
+  white: new THREE.MeshLambertMaterial({ color: 0xF4F6F9, flatShading: true })
+};
+
+const objectsGroup = new THREE.Group();
+scene.add(objectsGroup);
+
+// 1. Central Hero Geometric Cluster - "Cyber Paint Pen / Cylinder & Cubes"
+// Isometric styled floating composition
+const cubeGeo = new THREE.BoxGeometry(1.6, 1.6, 1.6);
+const centralCube = new THREE.Mesh(cubeGeo, materials.yellow);
+centralCube.position.set(-1.8, 0.4, 0);
+centralCube.castShadow = true;
+centralCube.receiveShadow = true;
+objectsGroup.add(centralCube);
+
+// Stylized Cylinder (Paint can / Stamper)
+const cylGeo = new THREE.CylinderGeometry(1.1, 1.1, 2.0, 16);
+const cylinderMesh = new THREE.Mesh(cylGeo, materials.cyan);
+cylinderMesh.position.set(1.9, 0.6, -0.5);
+cylinderMesh.rotation.x = 0.35;
+cylinderMesh.rotation.z = -0.2;
+cylinderMesh.castShadow = true;
+cylinderMesh.receiveShadow = true;
+objectsGroup.add(cylinderMesh);
+
+// Stylized Pyramid / Prism (Selection tool indicator)
+const coneGeo = new THREE.ConeGeometry(1.2, 1.9, 4);
+const prismMesh = new THREE.Mesh(coneGeo, materials.magenta);
+prismMesh.position.set(0.2, 1.8, 0.6);
+prismMesh.rotation.y = Math.PI / 4;
+prismMesh.rotation.z = 0.15;
+prismMesh.castShadow = true;
+prismMesh.receiveShadow = true;
+objectsGroup.add(prismMesh);
+
+// Floating Sphere (Brush tip / Pixel orb)
+const sphereGeo = new THREE.IcosahedronGeometry(0.9, 1); // faceted retro look
+const sphereMesh = new THREE.Mesh(sphereGeo, materials.lime);
+sphereMesh.position.set(-0.8, -1.2, 1.2);
+sphereMesh.castShadow = true;
+sphereMesh.receiveShadow = true;
+objectsGroup.add(sphereMesh);
+
+// Floating Mini-Cubes (Pixel debris / paint droplets)
+const miniCubes = [];
+const miniGeo = new THREE.BoxGeometry(0.45, 0.45, 0.45);
+const dropletColors = [materials.orange, materials.blue, materials.white, materials.magenta, materials.cyan];
+
+for (let i = 0; i < 7; i++) {
+  const mesh = new THREE.Mesh(miniGeo, dropletColors[i % dropletColors.length]);
+  const angle = (i / 7) * Math.PI * 2;
+  const radius = 3.2 + Math.sin(i) * 0.5;
+  mesh.position.set(Math.cos(angle) * radius, Math.sin(angle) * 1.5 + Math.cos(i * 2) * 0.5, (i % 3 - 1) * 0.8);
+  mesh.castShadow = true;
+  mesh.receiveShadow = true;
+  objectsGroup.add(mesh);
+  miniCubes.push({ mesh, speed: 0.015 + (i * 0.005), baseAngle: angle, radius });
+}
+
+// Flat Studio Floor / Shadow Catcher Plane with crisp shadow
+const shadowPlaneGeo = new THREE.PlaneGeometry(30, 20);
+const shadowPlaneMat = new THREE.ShadowMaterial({ opacity: 0.25 });
+const shadowPlane = new THREE.Mesh(shadowPlaneGeo, shadowPlaneMat);
+shadowPlane.position.set(0, -2.2, 0);
+shadowPlane.rotation.x = -Math.PI / 2;
+shadowPlane.receiveShadow = true;
+scene.add(shadowPlane);
+
+// Interactive mouse parallax & rotation tracking
+let mouseX = 0;
+let mouseY = 0;
+let targetX = 0;
+let targetY = 0;
+
+function onMouseMove(e) {
+  const rect = container.getBoundingClientRect();
+  const relX = (e.clientX - rect.left) / rect.width;
+  const relY = (e.clientY - rect.top) / rect.height;
+  targetX = (relX - 0.5) * 2;
+  targetY = (relY - 0.5) * 2;
+}
+
+container.addEventListener('mousemove', onMouseMove);
+window.addEventListener('mousemove', (e) => {
+  // subtle fallback tracking even if mouse slightly wanders outside canvas
+  const x = (e.clientX / window.innerWidth - 0.5) * 2;
+  const y = (e.clientY / window.innerHeight - 0.5) * 2;
+  targetX = THREE.MathUtils.lerp(targetX, x, 0.1);
+  targetY = THREE.MathUtils.lerp(targetY, y, 0.1);
+});
+
+// Click interaction: gentle burst spin
+let spinBurst = 0;
+container.addEventListener('click', () => {
+  spinBurst = 0.18;
+});
+
+function onResize() {
+  const w = container.clientWidth || window.innerWidth;
+  const h = container.clientHeight || 500;
+  camera.aspect = w / h;
+  camera.updateProjectionMatrix();
+  renderer.setSize(w, h);
+}
+window.addEventListener('resize', onResize);
+
+// Animation Loop
+let clock = new THREE.Clock();
+
+function animate() {
+  requestAnimationFrame(animate);
+  const delta = clock.getDelta();
+  const time = clock.getElapsedTime();
+
+  // Smooth lerp mouse tracking
+  mouseX += (targetX - mouseX) * 0.05;
+  mouseY += (targetY - mouseY) * 0.05;
+
+  spinBurst = Math.max(0, spinBurst - delta * 0.1);
+
+  // Group rotation with smooth response
+  objectsGroup.rotation.y = time * 0.2 + mouseX * 0.45 + spinBurst;
+  objectsGroup.rotation.x = mouseY * 0.25;
+
+  // Individual object dancing rotations
+  centralCube.rotation.x = time * 0.5;
+  centralCube.rotation.y = time * 0.6;
+  centralCube.position.y = 0.4 + Math.sin(time * 1.5) * 0.2;
+
+  cylinderMesh.rotation.y = time * 0.4;
+  cylinderMesh.position.y = 0.6 + Math.cos(time * 1.8) * 0.25;
+
+  prismMesh.rotation.y = time * 0.7;
+  prismMesh.position.y = 1.8 + Math.sin(time * 2.1) * 0.18;
+
+  sphereMesh.rotation.z = time * 0.3;
+  sphereMesh.position.y = -1.2 + Math.cos(time * 1.6) * 0.15;
+
+  // Orbiting mini cubes
+  miniCubes.forEach((item, idx) => {
+    const curAngle = item.baseAngle + time * item.speed * 1.5;
+    item.mesh.position.x = Math.cos(curAngle) * item.radius;
+    item.mesh.position.z = Math.sin(curAngle) * item.radius * 0.7;
+    item.mesh.position.y = Math.sin(time * 2 + idx) * 0.4 + (idx % 2 === 0 ? 0.3 : -0.5);
+    item.mesh.rotation.x += 0.02;
+    item.mesh.rotation.y += 0.03;
+  });
+
+  renderer.render(scene, camera);
+}
+
+animate();
+
+})();
+</script>
+</div>
+<!-- STITCH_THREEJS_END:ANIMATION_2 -->
+</body>
+</html>

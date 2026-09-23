@@ -1,0 +1,131 @@
+/* CyberPaint — shared motion & chrome */
+
+@keyframes page-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float-y {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes float-y-slow {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-14px) rotate(2deg); }
+}
+
+@keyframes pulse-edge {
+  0%, 100% { box-shadow: 4px 4px 0 0 #000; }
+  50% { box-shadow: 6px 6px 0 0 #00f0ff; }
+}
+
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+@keyframes blink-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+
+@keyframes slide-in-left {
+  from { opacity: 0; transform: translateX(-16px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes press-pop {
+  0% { transform: scale(1); }
+  40% { transform: scale(0.96) translate(2px, 2px); }
+  100% { transform: scale(1); }
+}
+
+main > div {
+  animation: page-in 0.45s ease-out both;
+}
+
+.anim-float {
+  animation: float-y 5s ease-in-out infinite;
+}
+
+.anim-float-slow {
+  animation: float-y-slow 7s ease-in-out infinite;
+}
+
+.anim-pulse-edge {
+  animation: pulse-edge 2.4s ease-in-out infinite;
+}
+
+.anim-blink {
+  animation: blink-dot 1.2s steps(1) infinite;
+}
+
+.anim-slide {
+  animation: slide-in-left 0.5s ease-out both;
+}
+
+.anim-delay-1 { animation-delay: 0.08s; }
+.anim-delay-2 { animation-delay: 0.16s; }
+.anim-delay-3 { animation-delay: 0.24s; }
+.anim-delay-4 { animation-delay: 0.32s; }
+
+.tool-active {
+  background-color: #00f0ff !important;
+  color: #002022 !important;
+  border-top-color: #000 !important;
+  border-left-color: #000 !important;
+  border-bottom-color: #fff !important;
+  border-right-color: #fff !important;
+  transform: translate(2px, 2px);
+  box-shadow: none !important;
+}
+
+.swatch-active {
+  outline: 2px solid #00f0ff;
+  outline-offset: 1px;
+}
+
+.nav-link {
+  transition: background-color 0.12s linear, color 0.12s linear, transform 0.08s linear;
+}
+
+.nav-link:hover {
+  transform: translateY(-1px);
+}
+
+.btn-press:active {
+  animation: press-pop 0.18s ease-out;
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes flip-3d {
+  0% { transform: perspective(900px) rotateY(0deg); }
+  50% { transform: perspective(900px) rotateY(180deg); }
+  100% { transform: perspective(900px) rotateY(360deg); }
+}
+
+.flip-3d-anim {
+  animation: flip-3d 0.7s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

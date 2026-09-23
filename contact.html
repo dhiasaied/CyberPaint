@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><link href="css/site.css" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {"darkMode":"class","theme":{"extend":{"colors":{"on-primary-fixed":"#002022","primary":"#dbfcff","inverse-on-surface":"#2f3034","outline-variant":"#3b494b","inverse-primary":"#006970","surface-container-highest":"#333538","surface-dim":"#111317","background":"#111317","secondary-fixed-dim":"#dec800","surface":"#111317","inverse-surface":"#e2e2e6","primary-container":"#00f0ff","secondary":"#ffffff","on-primary-fixed-variant":"#004f54","surface-container-lowest":"#0c0e11","error":"#ffb4ab","on-tertiary-container":"#c00025","primary-fixed":"#7df4ff","on-secondary-container":"#716500","surface-bright":"#37393d","on-surface":"#e2e2e6","tertiary":"#fff3f2","on-tertiary-fixed-variant":"#93001a","on-primary":"#00363a","on-primary-container":"#006970","secondary-fixed":"#fde400","on-tertiary":"#68000f","secondary-container":"#fde400","tertiary-fixed":"#ffdad8","on-tertiary-fixed":"#410006","on-secondary-fixed-variant":"#504700","outline":"#849495","surface-container-low":"#1a1c1f","error-container":"#93000a","surface-tint":"#00dbe9","on-error":"#690005","primary-fixed-dim":"#00dbe9","surface-variant":"#333538","on-secondary":"#373100","on-surface-variant":"#b9cacb","on-error-container":"#ffdad6","on-secondary-fixed":"#201c00","tertiary-fixed-dim":"#ffb3b0","surface-container":"#1e2023","tertiary-container":"#ffcecb","surface-container-high":"#282a2d","on-background":"#e2e2e6"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"1rem","space-md":"0.75rem","space-sm":"0.5rem","space-lg":"1.25rem","space-xl":"2rem","gutter":"0.75rem","space-xs":"0.25rem"},"fontFamily":{"label-md":["JetBrains Mono"],"body-md":["Inter"],"headline-md":["Space Grotesk"],"display-lg-mobile":["Space Grotesk"],"body-sm":["Inter"],"headline-sm":["Space Grotesk"],"headline-lg-mobile":["Space Grotesk"],"label-lg":["JetBrains Mono"],"label-sm":["JetBrains Mono"],"headline-lg":["Space Grotesk"],"display-lg":["Space Grotesk"],"code":["JetBrains Mono"],"body-lg":["Inter"]},"fontSize":{"label-md":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg-mobile":["32px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-lg":["13px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"12px","letterSpacing":"0.08em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-lg":["48px",{"lineHeight":"52px","letterSpacing":"-0.03em","fontWeight":"700"}],"code":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface select-none"><header class="fixed top-0 left-0 right-0 h-14 z-50 bg-surface-container-lowest border-b-2 border-[#000000] px-space-md flex items-center justify-between shadow-[0_3px_0px_0px_#000000]"><div class="flex items-center gap-space-lg"><a href="index.html" class="flex items-center gap-space-sm bg-surface-container-highest border-t-2 border-l-2 border-[#333538] border-b-2 border-r-2 border-[#000000] px-space-sm py-1 shadow-[2px_2px_0px_0px_#000000] no-underline"><span class="w-2.5 h-2.5 bg-primary-container block"></span><span class="font-label-md text-label-md uppercase tracking-wider text-primary">PAINT.SYS v3.0 [UNREGISTERED HYPER-CANVAS]</span></a><nav class="hidden lg:flex items-center gap-1" data-active-classes="bg-primary-container text-on-primary-fixed border-t-2 border-l-2 border-[#000000] border-b-2 border-r-2 border-[#ffffff]"><a class="px-space-sm py-1 font-label-md text-label-md uppercase border-t-2 border-l-2 border-[#333538] border-b-2 border-r-2 border-[#000000] bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-none nav-link" data-path="index" href="index.html">Studio</a><a class="px-space-sm py-1 font-label-md text-label-md uppercase border-t-2 border-l-2 border-[#333538] border-b-2 border-r-2 border-[#000000] bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-none nav-link" data-path="propos" href="propos.html">À Propos</a><a class="px-space-sm py-1 font-label-md text-label-md uppercase border-t-2 border-l-2 border-[#333538] border-b-2 border-r-2 border-[#000000] bg-surface-container text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-none nav-link" data-path="services" href="services.html">Services</a><a class="px-space-sm py-1 font-label-md text-label-md uppercase transition-none bg-primary-container text-on-primary-fixed border-t-2 border-l-2 border-[#000000] border-b-2 border-r-2 border-[#ffffff] nav-link" data-path="contact" href="contact.html" aria-current="page">Contact</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-lowest border-2 border-[#000000] px-space-sm py-1 font-code text-code text-primary"><span class="bg-surface-container-high text-on-surface px-1.5 py-0.5 border border-[#3b494b]">FPS: 60</span><span class="bg-surface-container-high text-on-surface px-1.5 py-0.5 border border-[#3b494b]">RAM: 64MB</span><span class="bg-surface-container-high text-secondary-container text-on-secondary-container px-1.5 py-0.5 border border-[#3b494b]">ZOOM: 100%</span><span class="bg-surface-container-high text-primary px-1.5 py-0.5 border border-[#3b494b]">X:512 Y:256</span></div><div class="flex items-center gap-space-xs"><button class="px-space-sm py-1 bg-secondary-container text-on-secondary-container font-label-md text-label-md uppercase font-bold border-2 border-[#000000] shadow-[2px_2px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none">EXPORT</button><button class="px-space-sm py-1 bg-primary-container text-on-primary-container font-label-md text-label-md uppercase font-bold border-2 border-[#000000] shadow-[2px_2px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none">FLIP 3D</button></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center border-2 border-[#000000] shadow-[2px_2px_0px_0px_#000000]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><aside class="fixed left-0 top-14 bottom-14 w-28 bg-surface-container-low border-r-2 border-[#000000] z-40 p-space-xs flex flex-col justify-between overflow-y-auto shadow-[3px_0px_0px_0px_#000000]"><div><div class="w-full bg-surface-container-highest border border-[#000000] text-center py-0.5 mb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">TOOL-RACK</div><div class="grid grid-cols-2 gap-1"><button class="h-11 w-11 bg-surface-container-high border-t-2 border-l-2 border-[#37393d] border-b-2 border-r-2 border-[#000000] shadow-[3px_3px_0px_0px_#000000] flex flex-col items-center justify-center text-on-surface active:bg-primary-container active:text-on-primary-fixed active:border-t-2 active:border-l-2 active:border-[#000000] active:border-b-2 active:border-r-2 active:border-[#ffffff] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Freehand Pen"><span class="material-symbols-outlined text-[18px]">edit</span><span class="font-label-sm text-[8px] uppercase leading-none mt-0.5">PEN</span></button><button class="h-11 w-11 bg-surface-container-high border-t-2 border-l-2 border-[#37393d] border-b-2 border-r-2 border-[#000000] shadow-[3px_3px_0px_0px_#000000] flex flex-col items-center justify-center text-on-surface active:bg-primary-container active:text-on-primary-fixed active:border-t-2 active:border-l-2 active:border-[#000000] active:border-b-2 active:border-r-2 active:border-[#ffffff] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Polyline"><span class="material-symbols-outlined text-[18px]">polyline</span><span class="font-label-sm text-[8px] uppercase leading-none mt-0.5">POLY</span></button><button class="h-11 w-11 bg-surface-container-high border-t-2 border-l-2 border-[#37393d] border-b-2 border-r-2 border-[#000000] shadow-[3px_3px_0px_0px_#000000] flex flex-col items-center justify-center text-on-surface active:bg-primary-container active:text-on-primary-fixed active:border-t-2 active:border-l-2 active:border-[#000000] active:border-b-2 active:border-r-2 active:border-[#ffffff] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Neon Spray"><span class="material-symbols-outlined text-[18px]">air</span><span class="font-label-sm text-[8px] uppercase leading-none mt-0.5">SPRAY</span></button><button class="h-11 w-11 bg-surface-container-high border-t-2 border-l-2 border-[#37393d] border-b-2 border-r-2 border-[#000000] shadow-[3px_3px_0px_0px_#000000] flex flex-col items-center justify-center text-on-surface active:bg-primary-container active:text-on-primary-fixed active:border-t-2 active:border-l-2 active:border-[#000000] active:border-b-2 active:border-r-2 active:border-[#ffffff] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="3D Extrude"><span class="material-symbols-outlined text-[18px]">view_in_ar</span><span class="font-label-sm text-[8px] uppercase leading-none mt-0.5">EXTRD</span></button><button class="h-11 w-11 bg-surface-container-high border-t-2 border-l-2 border-[#37393d] border-b-2 border-r-2 border-[#000000] shadow-[3px_3px_0px_0px_#000000] flex flex-col items-center justify-center text-on-surface active:bg-primary-container active:text-on-primary-fixed active:border-t-2 active:border-l-2 active:border-[#000000] active:border-b-2 active:border-r-2 active:border-[#ffffff] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Marquee Select"><span class="material-symbols-outlined text-[18px]">crop_free</span><span class="font-label-sm text-[8px] uppercase leading-none mt-0.5">MARQ</span></button><button class="h-11 w-11 bg-surface-container-high border-t-2 border-l-2 border-[#37393d] border-b-2 border-r-2 border-[#000000] shadow-[3px_3px_0px_0px_#000000] flex flex-col items-center justify-center text-on-surface active:bg-primary-container active:text-on-primary-fixed active:border-t-2 active:border-l-2 active:border-[#000000] active:border-b-2 active:border-r-2 active:border-[#ffffff] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Flood Fill"><span class="material-symbols-outlined text-[18px]">format_paint</span><span class="font-label-sm text-[8px] uppercase leading-none mt-0.5">FILL</span></button><button class="h-11 w-11 bg-surface-container-high border-t-2 border-l-2 border-[#37393d] border-b-2 border-r-2 border-[#000000] shadow-[3px_3px_0px_0px_#000000] flex flex-col items-center justify-center text-on-surface active:bg-primary-container active:text-on-primary-fixed active:border-t-2 active:border-l-2 active:border-[#000000] active:border-b-2 active:border-r-2 active:border-[#ffffff] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Typography Glyph"><span class="material-symbols-outlined text-[18px]">title</span><span class="font-label-sm text-[8px] uppercase leading-none mt-0.5">TEXT</span></button><button class="h-11 w-11 bg-surface-container-high border-t-2 border-l-2 border-[#37393d] border-b-2 border-r-2 border-[#000000] shadow-[3px_3px_0px_0px_#000000] flex flex-col items-center justify-center text-on-surface active:bg-primary-container active:text-on-primary-fixed active:border-t-2 active:border-l-2 active:border-[#000000] active:border-b-2 active:border-r-2 active:border-[#ffffff] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Eraser"><span class="material-symbols-outlined text-[18px]">ink_eraser</span><span class="font-label-sm text-[8px] uppercase leading-none mt-0.5">ERASE</span></button><button class="h-11 w-11 bg-surface-container-high border-t-2 border-l-2 border-[#37393d] border-b-2 border-r-2 border-[#000000] shadow-[3px_3px_0px_0px_#000000] flex flex-col items-center justify-center text-on-surface active:bg-primary-container active:text-on-primary-fixed active:border-t-2 active:border-l-2 active:border-[#000000] active:border-b-2 active:border-r-2 active:border-[#ffffff] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Geometric Prisms"><span class="material-symbols-outlined text-[18px]">category</span><span class="font-label-sm text-[8px] uppercase leading-none mt-0.5">PRISM</span></button><button class="h-11 w-11 bg-surface-container-high border-t-2 border-l-2 border-[#37393d] border-b-2 border-r-2 border-[#000000] shadow-[3px_3px_0px_0px_#000000] flex flex-col items-center justify-center text-on-surface active:bg-primary-container active:text-on-primary-fixed active:border-t-2 active:border-l-2 active:border-[#000000] active:border-b-2 active:border-r-2 active:border-[#ffffff] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Color Dropper"><span class="material-symbols-outlined text-[18px]">colorize</span><span class="font-label-sm text-[8px] uppercase leading-none mt-0.5">DROP</span></button><button class="h-11 w-11 bg-surface-container-high border-t-2 border-l-2 border-[#37393d] border-b-2 border-r-2 border-[#000000] shadow-[3px_3px_0px_0px_#000000] flex flex-col items-center justify-center text-on-surface active:bg-primary-container active:text-on-primary-fixed active:border-t-2 active:border-l-2 active:border-[#000000] active:border-b-2 active:border-r-2 active:border-[#ffffff] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Magic Stamp"><span class="material-symbols-outlined text-[18px]">approval</span><span class="font-label-sm text-[8px] uppercase leading-none mt-0.5">STAMP</span></button><button class="h-11 w-11 bg-surface-container-high border-t-2 border-l-2 border-[#37393d] border-b-2 border-r-2 border-[#000000] shadow-[3px_3px_0px_0px_#000000] flex flex-col items-center justify-center text-on-surface active:bg-primary-container active:text-on-primary-fixed active:border-t-2 active:border-l-2 active:border-[#000000] active:border-b-2 active:border-r-2 active:border-[#ffffff] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none" title="Layer Splice"><span class="material-symbols-outlined text-[18px]">content_cut</span><span class="font-label-sm text-[8px] uppercase leading-none mt-0.5">SPLC</span></button></div></div><div class="bg-surface-container-lowest border-2 border-[#000000] p-1 flex flex-col items-center gap-1 shadow-[2px_2px_0px_0px_#000000]"><div class="font-label-sm text-[8px] uppercase text-outline">PIXEL STEP</div><div class="w-full flex justify-between gap-1"><button class="flex-1 bg-surface-container-highest text-on-surface border border-[#000000] font-label-sm text-center py-0.5 active:bg-primary">1</button><button class="flex-1 bg-surface-container-highest text-on-surface border border-[#000000] font-label-sm text-center py-0.5 active:bg-primary">4</button><button class="flex-1 bg-primary-container text-on-primary-container font-bold border border-[#000000] font-label-sm text-center py-0.5">8</button></div></div></aside><div class="pl-28 pb-14"><main class="relative pt-14 bg-surface-dim min-h-[calc(100vh-3.5rem)]"><div class="flex flex-col w-full">
+<div class="relative w-full min-h-screen bg-[#111317] overflow-hidden px-4 py-8 md:px-10 md:py-12 flex flex-col items-center justify-start select-none">
+<!-- Isometric & Floating 3D Geometric Entities (No Gradients, Solid Sharp Flats) -->
+<!-- Element 1: Isometric Cyan Prism Top-Left -->
+<div class="absolute -top-6 -left-6 md:top-8 md:left-8 z-10 pointer-events-none anim-float">
+<svg class="drop-shadow-[8px_8px_0px_#000000]" fill="none" height="140" viewbox="0 0 140 140" width="140">
+<!-- Isometric Top Face -->
+<polygon fill="#00F0FF" points="70,10 120,40 70,70 20,40" stroke="#000000" stroke-linejoin="miter" stroke-width="3"></polygon>
+<!-- Isometric Left Face -->
+<polygon fill="#006970" points="20,40 70,70 70,130 20,100" stroke="#000000" stroke-linejoin="miter" stroke-width="3"></polygon>
+<!-- Isometric Right Face -->
+<polygon fill="#00A3AD" points="70,70 120,40 120,100 70,130" stroke="#000000" stroke-linejoin="miter" stroke-width="3"></polygon>
+</svg>
+</div>
+<!-- Element 2: Magenta Faceted Voxel Cube Top-Right -->
+<div class="absolute top-12 -right-8 md:top-14 md:right-12 z-10 pointer-events-none anim-float-slow">
+<svg class="drop-shadow-[10px_10px_0px_#000000]" fill="none" height="120" viewbox="0 0 120 120" width="120">
+<!-- Top -->
+<polygon fill="#FF007A" points="60,10 105,35 60,60 15,35" stroke="#000000" stroke-width="3"></polygon>
+<!-- Left side -->
+<polygon fill="#990049" points="15,35 60,60 60,110 15,85" stroke="#000000" stroke-width="3"></polygon>
+<!-- Right side -->
+<polygon fill="#CC0062" points="60,60 105,35 105,85 60,110" stroke="#000000" stroke-width="3"></polygon>
+<!-- Inset Voxel detail -->
+<polygon fill="#FFE600" points="60,35 80,47 60,58 40,47" stroke="#000000" stroke-width="2"></polygon>
+</svg>
+</div>
+<!-- Element 3: Acid Lime Cylinder Disc Center-Left -->
+<div class="hidden lg:block absolute top-[45%] left-4 z-10 pointer-events-none anim-float">
+<svg class="drop-shadow-[8px_8px_0px_#000000]" fill="none" height="130" viewbox="0 0 110 130" width="110">
+<!-- Cylinder Bottom Cap Edge -->
+<path d="M10 90 C10 105 100 105 100 90 L100 40 L10 40 Z" fill="#00964D" stroke="#000000" stroke-width="3"></path>
+<!-- Cylinder Top Plate -->
+<ellipse cx="55" cy="40" fill="#00E676" rx="45" ry="25" stroke="#000000" stroke-width="3"></ellipse>
+<ellipse cx="55" cy="40" fill="#000000" rx="20" ry="11"></ellipse>
+<ellipse cx="55" cy="40" fill="#FFFFFF" rx="8" ry="4"></ellipse>
+</svg>
+</div>
+<!-- Element 4: Industrial Orange Wedge Bottom-Right -->
+<div class="hidden md:block absolute -bottom-10 right-8 z-10 pointer-events-none anim-float-slow">
+<svg class="drop-shadow-[12px_12px_0px_#000000]" fill="none" height="150" viewbox="0 0 150 150" width="150">
+<!-- Ramp Top -->
+<polygon fill="#FF7A00" points="20,110 120,40 140,55 40,125" stroke="#000000" stroke-width="3"></polygon>
+<!-- Ramp Face -->
+<polygon fill="#B25500" points="20,110 40,125 40,140 20,125" stroke="#000000" stroke-width="3"></polygon>
+<!-- Ramp Slope Flank -->
+<polygon fill="#783900" points="40,125 140,55 140,70 40,140" stroke="#000000" stroke-width="3"></polygon>
+</svg>
+</div>
+<!-- Element 5: Floating Canary Yellow Stepped Cross -->
+<div class="absolute bottom-6 left-10 md:left-24 z-10 pointer-events-none anim-float">
+<div class="w-12 h-12 bg-[#FFE600] border-[3px] border-[#000000] shadow-[6px_6px_0px_0px_#000000] relative">
+<div class="absolute -top-3 left-3 w-6 h-3 bg-[#FFE600] border-t-[3px] border-x-[3px] border-[#000000]"></div>
+<div class="absolute -bottom-3 left-3 w-6 h-3 bg-[#FFE600] border-b-[3px] border-x-[3px] border-[#000000]"></div>
+<div class="absolute -left-3 top-3 w-3 h-6 bg-[#FFE600] border-l-[3px] border-y-[3px] border-[#000000]"></div>
+<div class="absolute -right-3 top-3 w-3 h-6 bg-[#FFE600] border-r-[3px] border-y-[3px] border-[#000000]"></div>
+</div>
+</div>
+<!-- Top Coordinate Bar Above White Canvas -->
+<div class="w-full max-w-5xl flex flex-wrap items-center justify-between gap-2 mb-3 z-20 font-label-md text-label-md">
+<div class="flex items-center gap-2 bg-[#0C0E11] text-[#00F0FF] px-3 py-1.5 border-[2px] border-[#000000] shadow-[3px_3px_0px_0px_#000000]">
+<span class="w-2.5 h-2.5 bg-[#00E676] inline-block"></span>
+<span class="tracking-widest">TRANSMISSION_NODE // LIAISON ACTIVE</span>
+</div>
+<div class="flex items-center gap-2 font-code text-code">
+<span class="bg-[#FFE600] text-[#000000] font-bold px-2 py-1 border-[2px] border-[#000000] shadow-[2px_2px_0px_0px_#000000]">FREQ: 433.92 MHz</span>
+<span class="bg-[#FF007A] text-[#FFFFFF] font-bold px-2 py-1 border-[2px] border-[#000000] shadow-[2px_2px_0px_0px_#000000]">PROTO: VOXEL-RAW</span>
+<span class="hidden sm:inline-block bg-[#0C0E11] text-[#FFFFFF] px-2 py-1 border-[2px] border-[#000000] shadow-[2px_2px_0px_0px_#000000]">LATENCY: 0.1ms</span>
+</div>
+</div>
+<!-- MAIN CENTRAL CANVAS SHEET (matches site background) -->
+<div class="relative w-full max-w-5xl bg-[#111317] text-[#e2e2e6] anim-pulse-edge border-[3px] border-[#000000] shadow-[12px_12px_0px_0px_#000000] z-20" style="background-image: linear-gradient(to right, #333538 1px, transparent 1px), linear-gradient(to bottom, #333538 1px, transparent 1px); background-size: 24px 24px; background-color: #111317;">
+<!-- Canvas Header Titlebar Frame -->
+<div class="w-full bg-[#0C0E11] text-[#FFFFFF] border-b-[3px] border-[#000000] px-4 py-2.5 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-3.5 h-3.5 bg-[#FF007A] border-[1.5px] border-[#000000]"></div>
+<div class="w-3.5 h-3.5 bg-[#FFE600] border-[1.5px] border-[#000000]"></div>
+<div class="w-3.5 h-3.5 bg-[#00F0FF] border-[1.5px] border-[#000000]"></div>
+<span class="font-label-lg text-label-lg tracking-wider text-[#FFFFFF] ml-2">ARCH_STUDIO://CONTACT_MATRIX_v3.0.CANVAS</span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm">
+<span class="bg-[#1E2023] text-[#00F0FF] px-2 py-0.5 border border-[#333538]">SOLID_FILL</span>
+<span class="bg-[#00E676] text-[#000000] font-bold px-2 py-0.5">READY</span>
+</div>
+</div>
+<!-- Technical Coordinate Ribbon Inside White Sheet -->
+<div class="w-full bg-[#111317] border-b-[2px] border-[#000000] px-4 py-1.5 flex flex-wrap items-center justify-between text-xs font-code text-[#b9cacb]">
+<span>CANVAS_BOX: [X: 000.0, Y: 000.0, Z: +12.0]</span>
+<span class="font-bold text-[#00F0FF]">ZERO-GRADIENT VECTOR PLANE</span>
+<span>SNAP_GRID: 8px / MONOLITHIC RELIEF</span>
+</div>
+<!-- Main Layout Body (Grid 2 Columns: Form Area + Studio Technical Specs) -->
+<div class="p-6 md:p-8 lg:p-10 grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Left / Core: Architectural Contact Form -->
+<div class="lg:col-span-8 flex flex-col space-y-6">
+<!-- Section Title Banner -->
+<div class="border-l-[6px] border-[#00F0FF] pl-4 py-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="bg-[#000000] text-[#FFFFFF] font-label-sm text-label-sm px-2 py-0.5 uppercase tracking-widest">TRANSMISSION DIRECTE</span>
+<span class="bg-[#FFE600] text-[#000000] font-label-sm text-label-sm px-2 py-0.5 font-bold uppercase">SANS BRUIT</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg uppercase text-[#e2e2e6] leading-none tracking-tight">
+              CANAL DE CONTACT 3D
+            </h1>
+<p class="font-body-md text-body-md text-[#b9cacb] mt-2 font-medium">
+              Établissez une liaison directe avec les architectes de surface CyberPaint. Matière solide, géométrie pure, zéro interpolation.
+            </p>
+</div>
+<form class="space-y-6" id="cyberContactForm" onsubmit="event.preventDefault(); triggerPhysicalSubmit();">
+<!-- Type Selector: Mechanical 3D Solid Toggle Buttons -->
+<div class="space-y-2">
+<label class="font-headline-sm text-headline-sm uppercase text-[#e2e2e6] tracking-wider flex items-center gap-2">
+<span class="w-2.5 h-2.5 bg-[#FF7A00] inline-block"></span>
+<span>00 // SÉLECTIONNEZ LE TYPE DE SIGNAL</span>
+</label>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-1" id="typeSelectorRack">
+<button class="type-btn active-type bg-[#00F0FF] text-[#000000] font-label-md text-label-md font-bold uppercase py-2.5 px-2 border-[2.5px] border-[#000000] shadow-[4px_4px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] text-center transition-none" onclick="selectType(this, 'PROJET')" type="button">
+                  PROJET STUDIO
+                </button>
+<button class="type-btn bg-[#1e2023] text-[#e2e2e6] font-label-md text-label-md font-bold uppercase py-2.5 px-2 border-[2.5px] border-[#000000] shadow-[4px_4px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] text-center hover:bg-[#282a2d] transition-none" onclick="selectType(this, 'LICENCE')" type="button">
+                  LICENCE CHISEL
+                </button>
+<button class="type-btn bg-[#1e2023] text-[#e2e2e6] font-label-md text-label-md font-bold uppercase py-2.5 px-2 border-[2.5px] border-[#000000] shadow-[4px_4px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] text-center hover:bg-[#282a2d] transition-none" onclick="selectType(this, 'SUPPORT')" type="button">
+                  SUPPORT MOTEUR
+                </button>
+<button class="type-btn bg-[#1e2023] text-[#e2e2e6] font-label-md text-label-md font-bold uppercase py-2.5 px-2 border-[2.5px] border-[#000000] shadow-[4px_4px_0px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] text-center hover:bg-[#282a2d] transition-none" onclick="selectType(this, 'AUTRE')" type="button">
+                  AUTRE VECTEUR
+                </button>
+</div>
+</div>
+<!-- Inputs Row 1: Name + Email with 3D Relief & Offset Shadow -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<!-- Input 01 -->
+<div class="space-y-1.5">
+<label class="font-headline-sm text-headline-sm uppercase text-[#e2e2e6] flex items-center justify-between" for="senderName">
+<span>01 // IDENTIFIANT / NOM</span>
+<span class="font-code text-label-sm text-[#849495]">[STR_REQUIRED]</span>
+</label>
+<div class="relative">
+<input class="w-full bg-[#1a1c1f] text-[#e2e2e6] font-code text-code px-3.5 py-3 border-[2.5px] border-[#000000] shadow-[4px_4px_0px_0px_#000000] focus:bg-[#1e2023] focus:outline-none focus:border-[#00F0FF] focus:-translate-x-[2px] focus:-translate-y-[2px] focus:shadow-[6px_6px_0px_0px_#000000] transition-none placeholder:text-[#849495]" id="senderName" placeholder="EX: ARX_SYS_09" required="" type="text"/>
+<div class="absolute right-3 top-3 w-3 h-3 bg-[#00E676] border border-[#000000]"></div>
+</div>
+</div>
+<!-- Input 02 -->
+<div class="space-y-1.5">
+<label class="font-headline-sm text-headline-sm uppercase text-[#e2e2e6] flex items-center justify-between" for="senderEmail">
+<span>02 // FRÉQUENCE / EMAIL</span>
+<span class="font-code text-label-sm text-[#849495]">[NET_TARGET]</span>
+</label>
+<div class="relative">
+<input class="w-full bg-[#1a1c1f] text-[#e2e2e6] font-code text-code px-3.5 py-3 border-[2.5px] border-[#000000] shadow-[4px_4px_0px_0px_#000000] focus:bg-[#1e2023] focus:outline-none focus:border-[#00F0FF] focus:-translate-x-[2px] focus:-translate-y-[2px] focus:shadow-[6px_6px_0px_0px_#000000] transition-none placeholder:text-[#849495]" id="senderEmail" placeholder="operator@voxel.domain" required="" type="email"/>
+<div class="absolute right-3 top-3 w-3 h-3 bg-[#00F0FF] border border-[#000000]"></div>
+</div>
+</div>
+</div>
+<!-- Input 03: Subject / Dispatch Code -->
+<div class="space-y-1.5">
+<label class="font-headline-sm text-headline-sm uppercase text-[#e2e2e6] flex items-center justify-between" for="msgSubject">
+<span>03 // MATRICULE DU SUJET</span>
+<span class="font-code text-label-sm text-[#849495]">[REF_IDENTIFIER]</span>
+</label>
+<input class="w-full bg-[#1a1c1f] text-[#e2e2e6] font-code text-code px-3.5 py-3 border-[2.5px] border-[#000000] shadow-[4px_4px_0px_0px_#000000] focus:bg-[#1e2023] focus:outline-none focus:border-[#00F0FF] focus:-translate-x-[2px] focus:-translate-y-[2px] focus:shadow-[6px_6px_0px_0px_#000000] transition-none placeholder:text-[#849495]" id="msgSubject" placeholder="SYNTHÈSE VECTEURS 3D // INTÉGRATION RASTER ENGINE" required="" type="text"/>
+</div>
+<!-- Input 04: Message Matrix (Textarea) -->
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<label class="font-headline-sm text-headline-sm uppercase text-[#e2e2e6]" for="msgBody">
+                  04 // MATRICE DU MESSAGE
+                </label>
+<span class="font-label-sm text-label-sm bg-[#000000] text-[#FFE600] px-1.5 py-0.5">RAW_TEXT: NO_LIMITS</span>
+</div>
+<textarea class="w-full bg-[#1a1c1f] text-[#e2e2e6] font-code text-code p-3.5 border-[2.5px] border-[#000000] shadow-[4px_4px_0px_0px_#000000] focus:bg-[#1e2023] focus:outline-none focus:border-[#00F0FF] focus:-translate-x-[2px] focus:-translate-y-[2px] focus:shadow-[6px_6px_0px_0px_#000000] transition-none placeholder:text-[#849495] resize-y" id="msgBody" placeholder="Détaillez ici les dimensions géométriques de votre requête, les contraintes de rendu, ou les paramètres d'exportation souhaités..." required="" rows="5"></textarea>
+</div>
+<!-- Checkbox & Physical Send Button Strip -->
+<div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
+<!-- Hard Mechanical Checkbox -->
+<label class="flex items-center gap-3 cursor-pointer select-none">
+<input checked="" class="peer sr-only" id="telemetryCheck" type="checkbox"/>
+<div class="w-6 h-6 bg-[#1e2023] border-[2.5px] border-[#000000] shadow-[2px_2px_0px_0px_#000000] flex items-center justify-center peer-checked:bg-[#00F0FF] peer-checked:border-[#000000]">
+<div class="w-3 h-3 bg-[#000000] hidden peer-checked:block"></div>
+</div>
+<span class="font-label-md text-label-md uppercase text-[#e2e2e6] font-bold">
+                  AUTORISER TÉLÉMÉTRIE SÉCURISÉE [HASH_BLAKE3]
+                </span>
+</label>
+<!-- HEAVY MECHANICAL 3D ACTION BUTTON (Canary Yellow #FFE600 with 8px Hard Block Shadow) -->
+<button class="relative bg-[#FFE600] text-[#000000] font-headline-md text-headline-md uppercase px-8 py-4 border-[3px] border-[#000000] shadow-[8px_8px_0px_0px_#000000] hover:bg-[#FFF033] active:translate-x-[6px] active:translate-y-[6px] active:shadow-[2px_2px_0px_0px_#000000] transition-none flex items-center justify-center gap-3" id="submitBtn" type="submit">
+<span class="material-symbols-outlined text-2xl font-bold">send</span>
+<span class="tracking-wider">TRANSMETTRE</span>
+</button>
+</div>
+</form>
+<!-- Feedback notification toast (Hidden initially) -->
+<div class="hidden w-full bg-[#00E676] text-[#000000] border-[3px] border-[#000000] p-4 shadow-[6px_6px_0px_0px_#000000] flex items-center justify-between" id="statusNotice">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-3xl font-black">check_box</span>
+<div>
+<div class="font-headline-sm text-headline-sm uppercase font-black">SIGNAL TRANSMIS AVEC SUCCÈS</div>
+<div class="font-code text-code">PACKET_HASH: 0x9AF4B01 // ACCUSÉ DE RÉCEPTION ÉMIS.</div>
+</div>
+</div>
+<button class="px-2 py-1 bg-[#000000] text-[#FFFFFF] font-label-sm" onclick="document.getElementById('statusNotice').classList.add('hidden')">FERMER</button>
+</div>
+</div>
+<!-- Right / Lateral: 3D Technical Rack & Direct Transmission Nodes -->
+<div class="lg:col-span-4 flex flex-col space-y-6">
+<!-- Direct Studio Coordinates Card (3D Inset Surface) -->
+<div class="bg-[#1a1c1f] border-[3px] border-[#000000] shadow-[6px_6px_0px_0px_#000000] p-4 flex flex-col space-y-4">
+<div class="bg-[#0C0E11] text-[#FFFFFF] px-3 py-1.5 flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase font-bold text-[#00F0FF]">LOCALISATION // QG</span>
+<span class="font-code text-label-sm text-[#FFE600]">GRID_LOC</span>
+</div>
+<div class="space-y-2 font-code text-code text-[#e2e2e6]">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 bg-[#FF007A]"></span>
+<span class="font-bold">CYBERPAINT VOXEL LABS</span>
+</div>
+<p class="text-xs text-[#b9cacb] leading-relaxed pl-4">
+                Secteur 07 // Tour Isométrique B-44<br/>
+                Boulevard des Matrices Solides<br/>
+                75011 Paris, FR
+              </p>
+<div class="pt-2 border-t-[2px] border-[#000000] flex flex-col gap-1 text-xs">
+<div class="flex justify-between">
+<span class="text-[#849495]">LIAISON DIRECTE:</span>
+<span class="font-bold text-[#e2e2e6]">+33 (0)1 89 20 40 3D</span>
+</div>
+<div class="flex justify-between">
+<span class="text-[#849495]">VECTEUR CHAT:</span>
+<span class="font-bold text-[#00F0FF]">#cyberpaint:matrix.org</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Server Availability / Live Hardware Telemetry Panel -->
+<div class="bg-[#0C0E11] text-[#FFFFFF] border-[3px] border-[#000000] shadow-[6px_6px_0px_0px_#000000] p-4 space-y-4">
+<div class="flex items-center justify-between border-b-[2px] border-[#333538] pb-2">
+<span class="font-label-md text-label-md uppercase text-[#FFE600] font-bold flex items-center gap-1.5">
+<span class="w-2 h-2 bg-[#00E676] animate-ping inline-block"></span>
+                STATUT DU MOTEUR
+              </span>
+<span class="bg-[#00E676] text-[#000000] font-code text-label-sm px-1.5 py-0.5 font-bold">ACTIF</span>
+</div>
+<div class="space-y-3 font-code text-xs">
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-[#849495]">DISPONIBILITÉ RÉSEAU:</span>
+<span class="text-[#00F0FF] font-bold">99.98%</span>
+</div>
+<!-- Mechanical stepped bar (no gradient) -->
+<div class="w-full h-3 bg-[#1A1C1F] border border-[#000000] flex">
+<div class="w-[99%] h-full bg-[#00F0FF]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-[#849495]">CHARGE TAMPON RASTER:</span>
+<span class="text-[#FFE600] font-bold">14.2%</span>
+</div>
+<div class="w-full h-3 bg-[#1A1C1F] border border-[#000000] flex">
+<div class="w-[14%] h-full bg-[#FFE600]"></div>
+</div>
+</div>
+<div class="bg-[#1A1C1F] p-2 border border-[#333538] text-[11px] text-[#B9CACB]">
+<div class="text-[#FF7A00] font-bold uppercase mb-0.5">HORAIRE ARCHITECTES :</div>
+                LUNDI AU VENDREDI // 08:00 — 19:00 UTC<br/>
+                TEMPS DE RÉPONSE MOYEN : &lt; 42 MINUTES
+              </div>
+</div>
+</div>
+<!-- Public Cryptographic PGP Key Block -->
+<div class="bg-[#1a1c1f] border-[3px] border-[#000000] shadow-[6px_6px_0px_0px_#000000] p-4 flex flex-col space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase font-bold text-[#e2e2e6]">CLÉ PUBLIQUE PGP VOXEL</span>
+<button class="bg-[#000000] text-[#FFFFFF] text-[10px] font-code px-2 py-1 hover:bg-[#00F0FF] hover:text-[#000000] transition-none uppercase" onclick="copyPgpKey()">
+                COPIER
+              </button>
+</div>
+<pre class="bg-[#0c0e11] border-[2px] border-[#000000] p-2 font-code text-[9px] text-[#b9cacb] overflow-x-hidden leading-tight select-all">-----BEGIN CYBERPAINT PUBLIC KEY-----
+mQGNBF+9wL0BDAC7F81xZ9X7j3p9Z2k1Q
+0v7sK9W2b3C4d5E6F7A8B9C0D1E2F3G4
+H5I6J7K8L9M0N1O2P3Q4R5S6T7U8V9W0
+X1Y2Z3==VOXEL-HASH-2025
+-----END CYBERPAINT PUBLIC KEY-----</pre>
+</div>
+<!-- Quick Palette Swatch Selector Tool for Inquiries -->
+<div class="bg-[#1a1c1f] border-[3px] border-[#000000] shadow-[6px_6px_0px_0px_#000000] p-3">
+<div class="font-label-sm text-label-sm uppercase font-bold text-[#e2e2e6] mb-2">
+              CODE CHROMATIQUE PROJET
+            </div>
+<div class="grid grid-cols-6 gap-1.5">
+<div class="h-6 bg-[#FFFFFF] border-[2px] border-[#000000] title='Pure White #FFFFFF'"></div>
+<div class="h-6 bg-[#00F0FF] border-[2px] border-[#000000] title='Cyber Cyan #00F0FF'"></div>
+<div class="h-6 bg-[#FFE600] border-[2px] border-[#000000] title='Solar Yellow #FFE600'"></div>
+<div class="h-6 bg-[#FF007A] border-[2px] border-[#000000] title='Hard Magenta #FF007A'"></div>
+<div class="h-6 bg-[#00E676] border-[2px] border-[#000000] title='Voxel Lime #00E676'"></div>
+<div class="h-6 bg-[#FF7A00] border-[2px] border-[#000000] title='Laser Orange #FF7A00'"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Canvas Sheet Bottom Edge Strip -->
+<div class="w-full bg-[#0C0E11] text-[#B9CACB] border-t-[3px] border-[#000000] px-4 py-2 flex flex-wrap items-center justify-between text-xs font-code">
+<div class="flex items-center gap-3">
+<span class="text-[#00F0FF]">DRAFT_SHEET_ID: #CP-3D-CONTACT-990</span>
+<span class="hidden md:inline text-[#849495]">// ALL SURFACES 100% HARD-EDGED &amp; FLAT</span>
+</div>
+<div class="text-[#FFE600] font-bold">
+          CYBERPAINT ENGINE © 2025 ALL GEOMETRIES RIGID.
+        </div>
+</div>
+</div>
+<!-- Bottom Decorative 3D Ruler Tape Under the Sheet -->
+<div class="w-full max-w-5xl mt-4 flex items-center justify-between border-[2px] border-[#000000] bg-[#1E2023] px-3 py-1 text-[10px] font-code text-[#849495] shadow-[4px_4px_0px_0px_#000000]">
+<span>000mm</span>
+<span class="text-[#00F0FF]">| | | | | | | | | |</span>
+<span>128mm</span>
+<span class="text-[#FFE600]">| | | | | | | | | |</span>
+<span>256mm</span>
+<span class="text-[#FF007A]">| | | | | | | | | |</span>
+<span>512mm</span>
+<span class="text-[#00E676]">| | | | | | | | | |</span>
+<span>1024mm [MAX_SCALE]</span>
+</div>
+</div>
+<!-- Interactive JavaScript for Mechanical Button Depress & Toggle Behavior -->
+<script>
+    function selectType(button, typeKey) {
+      const allBtns = document.querySelectorAll('#typeSelectorRack .type-btn');
+      allBtns.forEach(btn => {
+        btn.classList.remove('bg-[#00F0FF]', 'text-[#000000]');
+        btn.classList.add('bg-[#1e2023]', 'text-[#e2e2e6]');
+      });
+      button.classList.remove('bg-[#1e2023]', 'text-[#e2e2e6]');
+      button.classList.add('bg-[#00F0FF]', 'text-[#000000]');
+    }
+
+    function triggerPhysicalSubmit() {
+      const submitBtn = document.getElementById('submitBtn');
+      submitBtn.classList.add('translate-x-[6px]', 'translate-y-[6px]', 'shadow-[2px_2px_0px_0px_#000000]');
+      
+      setTimeout(() => {
+        submitBtn.classList.remove('translate-x-[6px]', 'translate-y-[6px]', 'shadow-[2px_2px_0px_0px_#000000]');
+        const notice = document.getElementById('statusNotice');
+        notice.classList.remove('hidden');
+        notice.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 150);
+    }
+
+    function copyPgpKey() {
+      const text = `-----BEGIN CYBERPAINT PUBLIC KEY-----
+mQGNBF+9wL0BDAC7F81xZ9X7j3p9Z2k1Q
+0v7sK9W2b3C4d5E6F7A8B9C0D1E2F3G4
+H5I6J7K8L9M0N1O2P3Q4R5S6T7U8V9W0
+X1Y2Z3==VOXEL-HASH-2025
+-----END CYBERPAINT PUBLIC KEY-----`;
+      navigator.clipboard.writeText(text);
+      alert("CLÉ PGP COPIÉE DANS LE PRESSE-PAPIER.");
+    }
+  </script>
+</div></main></div><footer class="fixed bottom-0 left-0 right-0 h-14 bg-surface-container-lowest border-t-2 border-[#000000] z-50 px-space-md flex items-center justify-between shadow-[0_-3px_0px_0px_#000000]"><div class="flex items-center gap-space-md"><div class="relative w-10 h-10 border-2 border-[#000000] bg-surface-container-highest flex items-center justify-center"><div class="absolute top-1 left-1 w-5 h-5 bg-primary-container border border-[#000000] z-10 shadow-[1px_1px_0px_0px_#000000]"></div><div class="absolute bottom-1 right-1 w-5 h-5 bg-[#ffffff] border border-[#000000] shadow-[1px_1px_0px_0px_#000000]"></div></div><div class="flex flex-col"><span class="font-code text-label-sm text-outline-variant">ACTIVE HEX</span><span class="font-code text-label-md text-primary font-bold">#00F0FF</span></div><div class="hidden sm:grid grid-rows-2 grid-flow-col gap-1 bg-surface-container-low p-1 border-2 border-[#000000]"><button class="w-4 h-4 border border-[#000000] bg-[#000000]"></button><button class="w-4 h-4 border border-[#000000] bg-[#ffffff]"></button><button class="w-4 h-4 border border-[#000000] bg-[#ff0055]"></button><button class="w-4 h-4 border border-[#000000] bg-[#00f0ff]"></button><button class="w-4 h-4 border border-[#000000] bg-[#ffe600]"></button><button class="w-4 h-4 border border-[#000000] bg-[#00e676]"></button><button class="w-4 h-4 border border-[#000000] bg-[#7928ca]"></button><button class="w-4 h-4 border border-[#000000] bg-[#ff7a00]"></button><button class="w-4 h-4 border border-[#000000] bg-[#0038ff]"></button><button class="w-4 h-4 border border-[#000000] bg-[#ff00aa]"></button><button class="w-4 h-4 border border-[#000000] bg-[#39ff14]"></button><button class="w-4 h-4 border border-[#000000] bg-[#666666]"></button><button class="w-4 h-4 border border-[#000000] bg-[#aaaaaa]"></button><button class="w-4 h-4 border border-[#000000] bg-[#ff3333]"></button><button class="w-4 h-4 border border-[#000000] bg-[#00bfff]"></button><button class="w-4 h-4 border border-[#000000] bg-[#ffea00]"></button><button class="w-4 h-4 border border-[#000000] bg-[#1de9b6]"></button><button class="w-4 h-4 border border-[#000000] bg-[#6200ea]"></button><button class="w-4 h-4 border border-[#000000] bg-[#ff6d00]"></button><button class="w-4 h-4 border border-[#000000] bg-[#2979ff]"></button><button class="w-4 h-4 border border-[#000000] bg-[#f50057]"></button><button class="w-4 h-4 border border-[#000000] bg-[#76ff03]"></button><button class="w-4 h-4 border border-[#000000] bg-[#424242]"></button><button class="w-4 h-4 border border-[#000000] bg-[#e0e0e0]"></button><button class="w-4 h-4 border border-[#000000] bg-[#ff5252]"></button><button class="w-4 h-4 border border-[#000000] bg-[#18ffff]"></button><button class="w-4 h-4 border border-[#000000] bg-[#ffff00]"></button><button class="w-4 h-4 border border-[#000000] bg-[#00e5ff]"></button></div></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-1 bg-surface-container px-space-sm py-1 border border-[#000000]"><span class="font-label-sm text-label-sm uppercase text-outline">BRUSH:</span><button class="w-5 h-5 bg-surface-container-highest text-on-surface border border-[#000000] font-label-sm flex items-center justify-center">-</button><span class="font-code text-label-md text-secondary-container px-1 font-bold">16px</span><button class="w-5 h-5 bg-surface-container-highest text-on-surface border border-[#000000] font-label-sm flex items-center justify-center">+</button></div><div class="hidden md:flex items-center bg-surface-container px-space-sm py-1 border border-[#000000] font-code text-label-sm text-on-surface-variant"><span class="w-2 h-2 bg-[#00e676] inline-block mr-1.5"></span>ENGINE: READY</div></div></footer><script src="js/site.js"></script></body></html>
